@@ -1,0 +1,29 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "vite*.ts",
+    "src/**/*.tsx",
+    "src/**/*"
+  ]
+}
