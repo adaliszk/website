@@ -1,6 +1,6 @@
 import { setupServiceWorker } from '@builder.io/qwik-city/service-worker'
-import type { ServiceWorkerGlobalScope } from '@types/serviceworker'
 
+// eslint-disable-next-line no-undef
 declare const self: ServiceWorkerGlobalScope
 
 

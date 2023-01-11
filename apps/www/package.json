@@ -20,14 +20,12 @@
   },
   "dependencies": {
     "@builder.io/qwik": "latest",
-    "@builder.io/qwik-city": "latest",
-    "react": "^18.2"
+    "@builder.io/qwik-city": "latest"
   },
   "devDependencies": {
     "@adaliszk/typescript": "latest",
     "@adaliszk/typescript-testing": "latest",
     "@adaliszk/website-preset": "workspace:*",
-    "@types/serviceworker": "latest",
     "eslint": "latest",
     "typescript": "latest",
     "undici": "latest",
