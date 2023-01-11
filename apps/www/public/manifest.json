@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "id": "/",
+  "name": "AdaLiszk Projects, Articles, Images, and Helm Charts",
+  "short_name": "AdaLiszk.io",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Personal blog and portfolio website for Ádám Liszkai, a Senior Software Developer with Mechatronic background"
+}
