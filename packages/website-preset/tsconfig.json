@@ -1,0 +1,10 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "baseUrl": "source",
+    "outDir": "dist"
+  },
+  "include": [
+    "source/**/*"
+  ]
+}

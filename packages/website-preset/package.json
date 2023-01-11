@@ -1,0 +1,44 @@
+{
+  "version": "0.0.0",
+  "name": "@adaliszk/website-preset",
+  "description": "Configuration for building static websites using Vite.",
+  "main": "dist/preset.js",
+  "module": "dist/preset.mjs",
+  "types": "dist/preset.d.ts",
+  "files": [
+    "dist/*",
+    "*.md"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "@adaliszk/typescript"
+    ]
+  },
+  "scripts": {
+    "build": "tsup source/preset.ts --format cjs,esm --sourcemap --dts",
+    "lint": "eslint source/**"
+  },
+  "dependencies": {
+    "@originjs/vite-plugin-federation": "latest",
+    "@vitejs/plugin-react": "latest",
+    "postcss": "latest",
+    "postcss-import": "latest",
+    "postcss-nested": "latest",
+    "postcss-preset-env": "latest",
+    "vite": "latest",
+    "vite-plugin-checker": "latest",
+    "vite-plugin-mkcert": "latest",
+    "vite-tsconfig-paths": "latest"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "latest",
+    "@swc/core": "latest",
+    "@types/postcss-import": "latest",
+    "@types/postcss-nested": "latest",
+    "@types/postcss-preset-env": "latest",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "undici": "latest"
+  }
+}
