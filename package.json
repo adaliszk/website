@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "license": "BSD 3-Clause",
+  "name": "@adaliszk/adaliszk.io-repository",
+  "description": "My portfolio and Blog site codebase, both backend and frontend.",
+  "repository": "github:adaliszk/adaliszk.io",
+  "packageManager": "yarn@3.3.1",
+  "scripts": {
+    "adaliszk.io": "yarn workspace @adaliszk/www.adaliszk.io",
+    "build": "turbo run build",
+    "workspace": "yarn workspace"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "latest",
+    "eslint": "^8.31",
+    "turbo": "^1.6",
+    "typescript": "^4.9"
+  },
+  "workspaces": [
+    "packages/*",
+    "components/*",
+    "services/*",
+    "apps/*"
+  ]
+}
