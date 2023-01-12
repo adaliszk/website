@@ -1,6 +1,6 @@
 import { component$, useStyles$ } from '@builder.io/qwik'
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city'
-import HeadOutlet from './components/areas/HeadOutlet'
+import HeadOutlet from './components/HeadOutlet'
 import globalStyles from './global.css?inline'
 
 
