@@ -4,7 +4,10 @@ import { DocumentHead } from '@builder.io/qwik-city'
 export const head: DocumentHead = {
     title: 'Under Construction!',
     meta: [
-        { name: 'description', content: 'Website is under construction!' },
+        {
+            name: 'description',
+            content: 'Website is under construction!',
+        },
     ],
 }
 

@@ -1,10 +1,14 @@
 import { component$, Slot } from '@builder.io/qwik'
+import SiteHeader from '../components/SiteHeader'
 
 export default component$(() =>
 {
     return <>
-        <div id={'siteContainer'}>
+        <section id={'siteHeader'}>
+            <SiteHeader/>
+        </section>
+        <section id={'siteContainer'}>
             <Slot/>
-        </div>
+        </section>
     </>
 })
