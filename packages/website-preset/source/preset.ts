@@ -20,8 +20,7 @@ export function defineConfig (config?: UserConfig): UserConfigExport
         plugins: [
             ...(config?.plugins ?? []),
             builtin.tsconfigPaths(),
-            builtin.mkcert(),
-            builtin.react()
+            builtin.mkcert()
         ],
         css: {
             postcss: {
