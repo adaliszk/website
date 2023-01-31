@@ -1,0 +1,14 @@
+article {
+    background: var(--color-paper);
+    color: var(--color-ink);
+
+    border: 1px solid var(--color-outline);
+    padding: 10px 20px;
+}
+
+article header > h2,
+article header > h3,
+article header > h4 {
+    padding: 10px;
+    margin: 0;
+}

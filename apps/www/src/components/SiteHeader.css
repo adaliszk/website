@@ -1,0 +1,29 @@
+#siteHeader header, #siteHeader nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#siteHeader {
+    background: var(--color-accent);
+}
+
+#siteHeader header, #siteHeader nav a {
+    color: rgb(var(--color-ink-dark));
+}
+
+#siteHeader header {
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+
+#siteHeader nav {
+
+}
+
+#siteHeader nav a {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}

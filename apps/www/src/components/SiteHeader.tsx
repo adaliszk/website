@@ -1,15 +1,17 @@
-import { component$ } from '@builder.io/qwik'
-import { useLocation, Link } from '@builder.io/qwik-city'
+import { component$, useStyles$ } from '@builder.io/qwik'
+import { Link } from '@builder.io/qwik-city'
+import siteHeaderStyles from './SiteHeader.css?inline'
 
 export default component$(() =>
 {
-    const loc = useLocation()
+    useStyles$(siteHeaderStyles)
 
     return <>
         <header>
             <h1>AdaLiszk</h1>
             <nav>
-                <Link href={'/'}>Home</Link>
+                <Link href={'/'}>Projects</Link>
+                <Link href={'/about-me'}>Who?</Link>
             </nav>
         </header>
     </>

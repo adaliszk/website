@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "@adaliszk/www.adaliszk.io",
+  "name": "@adaliszk.io/www",
   "description": "Personal website and blog renderer with Qwik",
   "repository": "github:adaliszk/adaliszk.io",
   "license": "BSD 3-Clause",
@@ -19,8 +19,8 @@
     "qwik": "qwik"
   },
   "dependencies": {
-    "@builder.io/qwik": "latest",
-    "@builder.io/qwik-city": "latest"
+    "@builder.io/qwik": "^0.16.2",
+    "@builder.io/qwik-city": "^0.1.0-beta9"
   },
   "devDependencies": {
     "@adaliszk/typescript": "latest",
