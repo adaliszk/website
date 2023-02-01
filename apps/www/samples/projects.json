@@ -1,0 +1,131 @@
+{
+  "__type": "Page",
+  "title": "My Projects",
+  "description": "automation, dedicated servers, backend systems, frontend components, things I spend my free time with",
+  "keywords": [
+    "projects",
+    "portfolio",
+    "automation",
+    "dedicated servers",
+    "backend systems",
+    "frontend components",
+    "additive manufacturing",
+    "hydroponics",
+    "github"
+  ],
+  "items": [
+    {
+      "__type": "Project",
+      "title": "AdaLiszk.io",
+      "description": "Personal blog and portfolio catalogue website for me to share my experience, learnings, and projects.",
+      "status": "Work in Progress",
+      "source": "https://github.com/adaliszk/adaliszk.io",
+      "downloads": null,
+      "stars": null,
+      "badges": [
+        "lit",
+        "nestjs",
+        "qwik"
+      ],
+      "keywords": [
+        "website",
+        "portfolio",
+        "blog",
+        "qwik",
+        "cloudflare",
+        "fission",
+        "functions",
+        "nestjs"
+      ]
+    },
+    {
+      "__type": "Project",
+      "title": "Valheim Server",
+      "description": "A simple, lightweight and secure Valheim Dedicated Server docker image with Kubernetes Helm chart support.",
+      "status": "Reworking for Automation",
+      "source": "https://github.com/adaliszk/valheim-server",
+      "downloads": 13000,
+      "stars": 31,
+      "badges": [
+        "docker",
+        "helm",
+        "kubernetes"
+      ],
+      "keywords": [
+        "valheim",
+        "dedicated server",
+        "docker",
+        "kubernetes",
+        "helm"
+      ]
+    },
+    {
+      "__type": "Project",
+      "title": "Node Toolbox",
+      "description": "My frequently used NPM packages wrapped up into easy-to-use packs.",
+      "status": "Work in Progress",
+      "source": "https://github.com/adaliszk/node-toolbox",
+      "downloads": null,
+      "stars": 3,
+      "badges": [
+        "eslint",
+        "lit",
+        "nestjs",
+        "react",
+        "typescript"
+      ],
+      "keywords": [
+        "meta-packages",
+        "toolbox",
+        "node packages",
+        "typescript"
+      ]
+    },
+    {
+      "__type": "Project",
+      "title": "Pulumi Infrastructure",
+      "description": "Templates and Helper packages for Pulumi-based Infrastructure, with the help of GitLab, Ansible, and Flux.",
+      "status": "Work in Progress",
+      "source": "https://github.com/adaliszk/infrastructure",
+      "downloads": null,
+      "stars": 3,
+      "badges": [
+        "ansible",
+        "flux",
+        "kubernetes",
+        "pulumi",
+        "typescript"
+      ],
+      "keywords": [
+        "pulumi typescript",
+        "toolbox",
+        "gitlab managed",
+        "flux managed",
+        "ansible",
+        "ansible playbooks"
+      ]
+    },
+    {
+      "__type": "Project",
+      "title": "Service Status Page",
+      "description": "Status page companion for your services utilising a lightweight layer on top of Prometheus.",
+      "status": "Planning",
+      "source": "https://github.com/adaliszk/service-status-page",
+      "downloads": null,
+      "stars": 0,
+      "badges": [
+        "kubernetes",
+        "prometheus",
+        "rust"
+      ],
+      "keywords": [
+        "prometheus",
+        "monitoring",
+        "status page",
+        "status report",
+        "companion",
+        "sidecar"
+      ]
+    }
+  ]
+}

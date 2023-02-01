@@ -57,19 +57,38 @@ body, td, th {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
 a {
+    background: transparent;
     color: var(--color-accent);
-    transition: all ease-in-out 160ms;
+    transition: color ease-in-out 160ms;
 }
 
 a:hover {
     color: var(--color-accent-outline);
 }
 
+a.tiny {
+    font-size: 12px;
+}
+
+#siteHeader {
+    background: var(--color-accent);
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #siteHeader header, #siteContainer main {
+    margin: 0 auto;
     max-width: var(--container-width);
     width: 100%;
-    margin: 0 auto;
 }
 
 section.articleGallery {

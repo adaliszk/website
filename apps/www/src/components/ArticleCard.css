@@ -6,9 +6,6 @@ article {
     padding: 10px 20px;
 }
 
-article header > h2,
-article header > h3,
-article header > h4 {
-    padding: 10px;
-    margin: 0;
+article header {
+    padding: 10px 0;
 }

@@ -14,7 +14,9 @@ export const head: DocumentHead = {
 export default component$(() =>
 {
     return <>
-        <h1>Woah there...</h1>
-        <p>This site is under construction, please come back later!</p>
+        <main>
+            <h1>Woah there...</h1>
+            <p>This site is under construction, please come back later!</p>
+        </main>
     </>
 })
