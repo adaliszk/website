@@ -25,7 +25,7 @@
   "devDependencies": {
     "@adaliszk/typescript": "latest",
     "@adaliszk/typescript-testing": "latest",
-    "@adaliszk/website-preset": "workspace:*",
+    "@adaliszk/web-compiler": "^0.3.0",
     "eslint": "latest",
     "typescript": "latest",
     "undici": "latest",
