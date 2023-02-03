@@ -1,16 +1,18 @@
 export interface ProjectData
 {
+    __type?: string
     title: string
     description: string
     keywords: string[]
-    badges?: string[]
+    badges: string[]
     source?: string
-    downloads?: number
-    stars?: number
+    downloads?: number | null
+    stars?: number | null
 }
 
 export interface ProjectsPage
 {
+    __type?: string
     title: string
     description: string
     keywords: string[]
