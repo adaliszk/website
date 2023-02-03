@@ -19,13 +19,13 @@
     "qwik": "qwik"
   },
   "dependencies": {
-    "@builder.io/qwik": "^0.16.2",
-    "@builder.io/qwik-city": "^0.1.0-beta9"
+    "@builder.io/qwik": "^0.17.2",
+    "@builder.io/qwik-city": "^0.1.0-beta11"
   },
   "devDependencies": {
     "@adaliszk/typescript": "latest",
     "@adaliszk/typescript-testing": "latest",
-    "@adaliszk/web-compiler": "^0.3.0",
+    "@adaliszk/web-compiler": "latest",
     "eslint": "latest",
     "typescript": "latest",
     "undici": "latest",
