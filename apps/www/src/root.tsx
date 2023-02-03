@@ -8,17 +8,15 @@ export default component$(() =>
 {
     useStyles$(globalStyles)
 
-    return <>
-        <QwikCityProvider>
-            <head lang={'en'}>
-                <meta charSet="utf-8"/>
-                <link rel="manifest" href="/manifest.json"/>
-                <HeadOutlet />
-            </head>
-            <body>
-                <RouterOutlet/>
-                <ServiceWorkerRegister/>
-            </body>
-        </QwikCityProvider>
-    </>
+    return <QwikCityProvider>
+        <head>
+            <meta charSet="utf-8"/>
+            <link rel="manifest" href="/manifest.json"/>
+            <HeadOutlet/>
+        </head>
+        <body>
+            <RouterOutlet/>
+            <ServiceWorkerRegister/>
+        </body>
+    </QwikCityProvider>
 })
