@@ -2,13 +2,18 @@ import { Slot, component$, useStylesScoped$ } from '@builder.io/qwik'
 import projectCardStyles from './ProjectCard.css?inline'
 
 
-export default component$(() =>
+export interface ProjectCardProps {
+    title: string
+    description?: string
+}
+
+export const ProjectCard = component$((props: ProjectCardProps) =>
 {
     useStylesScoped$(projectCardStyles)
 
     return <article>
         <header>
-            <Slot name={'header'} />
+            <h2>{props.title}</h2>
         </header>
         <Slot />
     </article>
