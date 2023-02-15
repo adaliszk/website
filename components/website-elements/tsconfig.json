@@ -1,0 +1,12 @@
+{
+  "extends": "@adaliszk/qwik/config",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "src"
+  },
+  "include": [
+    ".storybook/**/*",
+    "src/**/*.tsx",
+    "src/**/*"
+  ]
+}

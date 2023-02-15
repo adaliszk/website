@@ -1,0 +1,20 @@
+# @adaliszk.io/website-components
+
+The following elements are used to construct adaliszk.io main page.
+
+## Usage
+
+1. Add the package types with yarn or npm:
+    ```bash
+    yarn add -D @adaliszk.io/website-components @adaliszk.io/web-compiler
+    ```
+2. Configure the module federation in your `vite.config.ts`:
+    ```typescript
+    import { webConfig } from '@adaliszk/web-compiler'
+
+    export default webConfig({
+        remotes: {
+            'adaliszk.io': ['website-components'],
+        },
+    })
+    ```

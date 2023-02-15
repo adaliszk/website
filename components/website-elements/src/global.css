@@ -1,0 +1,90 @@
+:root {
+    --theme-color-primary: 103, 80, 164;
+    --theme-color-secondary: 29, 25, 43;
+    --theme-color-tertiary: 49, 17, 29;
+    --theme-color-error: 220, 54, 46;
+    --theme-color-surface: 255, 251, 254;
+    --theme-color-ink: 28, 27, 31;
+
+    --theme-border-radius: 16px;
+    --theme-item-spacing: 4px;
+    --theme-box-spacing: 16px;
+    --theme-min-size: 6px;
+
+    --color-primary: rgba(var(--theme-color-primary));
+    --color-on-primary: rgb(var(--theme-color-surface));
+    --color-primary-container: rgba(var(--theme-color-primary), 10%);
+    --color-on-primary-container: rgba(var(--theme-color-primary), 90%);
+
+    --color-secondary: rgba(var(--theme-color-secondary));
+    --color-on-secondary: rgb(var(--theme-color-surface));
+    --color-secondary-container: rgba(var(--theme-color-secondary), 10%);
+    --color-on-secondary-container: rgba(var(--theme-color-secondary), 90%);
+
+    --color-tertiary: rgba(var(--theme-color-primary));
+    --color-on-tertiary: rgb(var(--theme-color-surface));
+    --color-tertiary-container: rgba(var(--theme-color-tertiary), 10%);
+    --color-on-tertiary-container: rgba(var(--theme-color-tertiary), 90%);
+
+    --color-error: rgba(var(--theme-color-error));
+    --color-on-error: rgb(var(--theme-color-surface));
+    --color-error-container: rgba(var(--theme-color-error), 10%);
+    --color-on-error-container: rgba(var(--theme-color-error), 90%);
+
+    --color-outline: rgba(var(--theme-color-primary), 0.05);
+    --color-background: linear-gradient(0deg, var(--color-outline), var(--color-outline), rgb(var(--theme-color-surface)));
+    --color-on-background: rgb(var(--theme-color-ink));
+
+    --color-surface: rgb(var(--theme-color-surface));
+    --color-on-surface: rgb(var(--theme-color-ink));
+
+    --elevation1-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --elevation2-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --elevation3-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    --elevation4-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+    --elevation5-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+    --badge-radius: var(--theme-border-radius);
+    --badge-min-size: var(--theme-min-size);
+    --badge-background: var(--color-error);
+    --badge-ink: var(--color-on-error);
+
+    --card-background: var(--color-surface);
+    --card-border-radius: var(--theme-border-radius);
+    --card-text-spacting: var(--theme-item-spacing);
+    --card-box-spacing: var(--theme-box-spacing);
+    --card-spacing: var(--theme-item-spacing);
+    --card-border-color: var(--color-surface);
+    --card-border-outlined: var(--color-primary);
+    --card-shadow: none;
+}
+
+.elevated-1 {
+    --card-border-color: rgba(var(--theme-color-primary), 0.05);
+    --card-background: linear-gradient(0deg, var(--card-border-color), var(--card-border-color), rgb(var(--theme-color-surface)));
+    --card-shadow: var(--elevation1-shadow);
+}
+
+.elevated-2 {
+    --card-border-color: rgba(var(--theme-color-primary), 0.08);
+    --card-background: linear-gradient(0deg, var(--card-border-color), var(--card-border-color), rgb(var(--theme-color-surface)));
+    --card-shadow: var(--elevation2-shadow);
+}
+
+.elevated-3 {
+    --card-border-color: rgba(var(--theme-color-primary), 0.11);
+    --card-background: linear-gradient(0deg, var(--card-border-color), var(--card-border-color), rgb(var(--theme-color-surface)));
+    --card-shadow: var(--elevation3-shadow);
+}
+
+.elevated-4 {
+    --card-border-color: rgba(var(--theme-color-primary), 0.12);
+    --card-background: linear-gradient(0deg, var(--card-border-color), var(--card-border-color), rgb(var(--theme-color-surface)));
+    --card-shadow: var(--elevation4-shadow);
+}
+
+.elevated-5 {
+    --card-border-color: rgba(var(--theme-color-primary), 0.14);
+    --card-background: linear-gradient(0deg, var(--card-border-color), var(--card-border-color), rgb(var(--theme-color-surface)));
+    --card-shadow: var(--elevation5-shadow);
+}

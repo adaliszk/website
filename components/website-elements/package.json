@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "license": "BSD 3-Clause",
+  "name": "@adaliszk.io/website-elements",
+  "repository": "github:adaliszk/adaliszk.io",
+  "type": "module",
+  "main": "dist/website-elements.js",
+  "types": "dist/website-elements.d.ts",
+  "scripts": {
+    "build.docs": "storybook build",
+    "build.lib": "vite build",
+    "build": "yarn build.lib && yarn build.docs",
+    "start": "storybook dev --no-open --port 6006"
+  },
+  "dependencies": {
+    "@adaliszk/qwik": "^0.17"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "latest",
+    "@adaliszk/web-compiler": "latest",
+    "@babel/core": "latest",
+    "@builder.io/qwik": "latest",
+    "@storybook/addon-a11y": "next",
+    "@storybook/addon-essentials": "next",
+    "@storybook/addon-links": "next",
+    "@storybook/addon-storysource": "next",
+    "@storybook/addons": "next",
+    "@storybook/builder-vite": "next",
+    "@storybook/components": "next",
+    "@storybook/html": "next",
+    "@storybook/html-vite": "next",
+    "@storybook/theming": "next",
+    "eslint": "latest",
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "storybook": "next",
+    "storybook-framework-qwik": "latest",
+    "typescript": "latest",
+    "undici": "latest",
+    "vite": "latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@adaliszk/typescript"
+    ]
+  }
+}
