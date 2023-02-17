@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from 'storybook-framework-qwik'
 import type { CardProps } from './card.element'
 
 import { Card } from './card.element'
+import { FlexRow } from 'storytools'
 
 export default {
     title: 'Card',
@@ -13,11 +14,10 @@ export default {
     },
 } as Meta<CardProps>
 
-type Story = StoryObj<CardProps>
 
-export const Showcase: Story = {
-    decorators: [FlexRow],
-    render: (args) => <>
+export const Showcase = {
+    decorators: [FlexRow({ gap: 50 })],
+    render: (args: CardProps) => <>
         <Card {...args}>
             <h2 q:slot={'title'}>Title</h2>
             <h3 q:slot={'subtitle'}>Subtitle</h3>

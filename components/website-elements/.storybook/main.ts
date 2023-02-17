@@ -1,14 +1,11 @@
-import { StorybookConfig } from 'storybook-framework-qwik'
-import type { UserConfig } from 'vite'
-
-import { qwikVite } from '@builder.io/qwik/optimizer'
+import type { StorybookConfig } from 'storybook-framework-qwik'
+import type { QwikConfig } from '@adaliszk/qwik-compiler'
+import { compileQwik } from '@adaliszk/qwik-compiler'
 
 
 const config: StorybookConfig = {
     stories: [
-        '../src/**/*.story.@(ts|tsx|mdx)',
         '../src/**/*.stories.@(ts|tsx|mdx)',
-        '../docs/**/*.mdx',
         '../*.mdx',
     ],
     core: {
@@ -25,16 +22,15 @@ const config: StorybookConfig = {
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         '@storybook/addon-storysource',
-        '@storybook/addon-docs',
         '@storybook/addon-a11y',
     ],
     docs: {
         defaultName: 'Overview',
         autodocs: true,
     },
-    async viteFinal (config: UserConfig)
+    async viteFinal (config: QwikConfig)
     {
-        config.plugins?.unshift(qwikVite())
+        config.plugins?.unshift(compileQwik())
         config.server = config?.server ?? {}
         config.server.port = 6006
         config.server.watch = {

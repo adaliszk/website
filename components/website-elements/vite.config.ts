@@ -1,10 +1,9 @@
-import { webConfig } from '@adaliszk/web-compiler'
+import { qwikConfig } from '@adaliszk/qwik-compiler'
 
 
-export default webConfig({
-    server: {
-        watch: { usePolling: true },
-    },
+export default qwikConfig({
+    city: false,
+    server: { port: 6006, watch: { usePolling: true } },
     build: {
         lib: {
             entry: 'src/website-elements.ts',

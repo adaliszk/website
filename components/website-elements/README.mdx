@@ -1,20 +1,22 @@
-# @adaliszk.io/website-components
+# @adaliszk/qwik-material-components
 
-The following elements are used to construct adaliszk.io main page.
+Implements the 3rd version of Material Design for Qwik with Builder.io support. The goal is to provide a lightweight
+solution and expose enough CSS properties to customize the experience.
 
 ## Usage
 
 1. Add the package types with yarn or npm:
     ```bash
-    yarn add -D @adaliszk.io/website-components @adaliszk.io/web-compiler
+    yarn add @adaliszk/qwik-material-components
     ```
-2. Configure the module federation in your `vite.config.ts`:
-    ```typescript
-    import { webConfig } from '@adaliszk/web-compiler'
+2. Use the Components within our Qwik application
+    ```typescript jsx
+   import { component$ } from '@builder.io/qwik'
+   import { Button } from '@adaliszk/qwik-material-components'
 
-    export default webConfig({
-        remotes: {
-            'adaliszk.io': ['website-components'],
-        },
-    })
+   export default component$(() => {
+        return <>
+            <Button theme={'filled'}>Star this project</Button>
+        </>
+   })
     ```

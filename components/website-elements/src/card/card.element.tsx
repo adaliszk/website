@@ -1,10 +1,10 @@
 import { Slot, component$, useStylesScoped$ } from '@builder.io/qwik'
-import type { JSXNode } from '@builder.io/qwik'
+import type { JSXChildren } from '@builder.io/qwik'
 
 
 export interface CardSharedProps
 {
-    children?: JSXNode
+    children?: JSXChildren
 }
 
 export interface CardHeaderProps extends CardSharedProps
@@ -122,8 +122,8 @@ export const Card = component$((props?: CardProps) =>
             margin: var(--card-spacing);
             border: 1px solid var(--card-border-color);
             border-radius: var(--card-border-radius);
-            background: var(--card-background);
-            box-shadow: var(--card-shadow);
+            background: var(--elevation-background);
+            box-shadow: var(--elevation-shadow);
         }
         .card-container.outlined {
             border: 1px solid var(--card-border-outlined);

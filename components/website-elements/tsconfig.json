@@ -1,10 +1,17 @@
 {
-  "extends": "@adaliszk/qwik/config",
+  "extends": "@adaliszk/qwik/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "src",
     "outDir": "dist",
-    "baseUrl": "src"
+    "types": [
+      "vite/client",
+      "dom",
+      "esnext",
+      "node"
+    ]
   },
   "include": [
+    "vite.config.ts",
     ".storybook/**/*",
     "src/**/*.tsx",
     "src/**/*"

@@ -13,13 +13,15 @@
     "start": "storybook dev --no-open --port 6006"
   },
   "dependencies": {
-    "@adaliszk/qwik": "^0.17"
+    "undici": "latest"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "latest",
-    "@adaliszk/web-compiler": "latest",
-    "@babel/core": "latest",
-    "@builder.io/qwik": "latest",
+    "@adaliszk/qwik": "^0.18",
+    "@adaliszk/qwik-compiler": "^0.18",
+    "@adaliszk/typescript": "^4.9",
+    "@babel/core": "^7.20",
+    "@builder.io/qwik": "^0.18",
+    "@builder.io/qwik-city": "^0.2",
     "@storybook/addon-a11y": "next",
     "@storybook/addon-essentials": "next",
     "@storybook/addon-links": "next",
@@ -27,17 +29,14 @@
     "@storybook/addons": "next",
     "@storybook/builder-vite": "next",
     "@storybook/components": "next",
-    "@storybook/html": "next",
-    "@storybook/html-vite": "next",
     "@storybook/theming": "next",
-    "eslint": "latest",
+    "eslint": "^8.33",
     "react": "^18.2",
     "react-dom": "^18.2",
     "storybook": "next",
     "storybook-framework-qwik": "latest",
-    "typescript": "latest",
-    "undici": "latest",
-    "vite": "latest"
+    "typescript": "^4.9",
+    "vite": "^4.0"
   },
   "eslintConfig": {
     "extends": [
