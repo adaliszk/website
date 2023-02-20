@@ -1,7 +1,7 @@
 // noinspection JSUnusedGlobalSymbols
 
 import type { Meta } from 'storybook-framework-qwik'
-import type { CardProps } from './types'
+import type { CardProps } from './Card.types'
 
 import { Card } from './Card'
 import { Button } from 'button'

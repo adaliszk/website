@@ -1,5 +1,5 @@
 import { Slot, useStylesScoped$, useStyles$ } from '@builder.io/qwik'
-import { CardHeaderProps } from './types'
+import { CardHeaderProps } from './Card.types'
 
 
 /**

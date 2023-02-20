@@ -1,5 +1,5 @@
 import { Slot, useStyles$, useStylesScoped$ } from '@builder.io/qwik'
-import { CardContentProps } from './types'
+import { CardContentProps } from './Card.types'
 
 
 export function CardContent (props?: CardContentProps)

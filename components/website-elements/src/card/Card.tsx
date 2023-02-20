@@ -3,7 +3,7 @@ import { CardHeader } from './CardHeader'
 import { CardMedia } from './CardMedia'
 import { CardContent } from './CardContent'
 import { CardActions } from './CardActions'
-import type { CardProps } from './types'
+import type { CardProps } from './Card.types'
 
 
 /**
@@ -72,12 +72,12 @@ export const Card = component$<CardProps>((props) =>
     const outlinedCls = props?.outlined ? 'outlined' : undefined
     const filledCls = props?.filled ? 'filled' : undefined
 
-    return <>
+    return (
         <article class={['card-container', elevatedCls, outlinedCls, filledCls].join(' ')}>
             {CardHeader(props)}
             {CardMedia()}
             {CardContent(props)}
             {CardActions()}
         </article>
-    </>
+    )
 })
