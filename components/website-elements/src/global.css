@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
 :root {
     --theme-color-primary: 103, 80, 164;
     --theme-color-secondary: 29, 25, 43;
@@ -6,7 +8,8 @@
     --theme-color-surface: 255, 251, 254;
     --theme-color-ink: 28, 27, 31;
 
-    --theme-typo-default: 16px;
+    --theme-typo-large: 16px;
+    --theme-typo-medium: 14px;
     --theme-typo-small: 12px;
 
     --theme-border-radius: 16px;
@@ -68,19 +71,11 @@
     --button-border-outlined: var(--color-primary);
     --button-ink-outlined: var(--color-primary);
     --button-shadow: var(--elevation-shadow, none);
-
-    --card-background: var(--elevation-background, var(--color-surface));
-    --card-border-radius: var(--theme-border-radius);
-    --card-text-spacting: var(--theme-item-spacing);
-    --card-box-spacing: var(--theme-box-spacing);
-    --card-spacing: var(--theme-item-spacing);
-    --card-border-color: var(--elevation-border, var(--color-surface));
-    --card-border-outlined: var(--color-primary);
-    --card-shadow: var(--elevation-shadow, none);
 }
 
 body, td, th {
-    text-size: var(--theme-typo-default);
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: var(--theme-typo-medium);
 }
 
 .elevated-1, .elevated {

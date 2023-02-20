@@ -14,6 +14,6 @@ interface FlexRowDecoratorProps
 type FlexRowDecorator = (props: FlexRowDecoratorProps) => Decorator<BadgeProps>
 
 export const FlexRow: FlexRowDecorator = ({ gap }) => (story) =>
-    <div style={`display: flex; gap: ${gap}px; justify-content: space-between;`}>
+    <div style={`display: flex; gap: ${gap}px; justify-content: space-between; align-items: center;`}>
         {story()}
     </div>

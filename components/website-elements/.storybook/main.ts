@@ -6,6 +6,7 @@ import { compileQwik } from '@adaliszk/qwik-compiler'
 const config: StorybookConfig = {
     stories: [
         '../src/**/*.stories.@(ts|tsx|mdx)',
+        '../src/**/stories.@(ts|tsx|mdx)',
         '../*.mdx',
     ],
     core: {
