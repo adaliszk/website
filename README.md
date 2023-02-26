@@ -23,6 +23,5 @@ architecture by utilising modern technologies with the minimal footprint possibl
 ### Structure
 
 - **/apps**: independent Qwik applications for each domain
-- **/components**: reusable web components for interactive UI parts
-- **/functions**: function APIs and processors
 - **/packages**: shared configurations and helpers
+- **/services**: backend APIs and processors as services
