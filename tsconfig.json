@@ -1,0 +1,23 @@
+{
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "@builder.io/qwik",
+        "plugins": [{ "name": "@astrojs/ts-plugin" }],
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "baseUrl": "src",
+        "types": ["../.astro/types.d.ts", "astro/client", "astro-global/client"]
+    },
+    "exclude": ["node_modules"],
+    "include": [
+        "content/**/*.mdx",
+        "content/**/*",
+        "src/**/*.d.ts",
+        "src/**/*.astro",
+        "src/**/*.tsx",
+        "src/**/*",
+        "astro.config.ts",
+        "tailwind.*.ts"
+    ]
+}

@@ -1,25 +1,35 @@
 {
-  "private": true,
-  "license": "BSD 3-Clause",
-  "name": "@adaliszk.io/repository",
-  "description": "My portfolio and Blog site codebase, both backend and frontend.",
-  "repository": "github:adaliszk/adaliszk.io",
-  "packageManager": "yarn@3.3.1",
-  "scripts": {
-    "workspace": "yarn workspace",
-    "website": "yarn workspace @adaliszk.io/website",
-    "website-elements": "yarn workspace @adaliszk.io/website-elements",
-    "build": "turbo run build"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "latest",
-    "eslint": "^8.31",
-    "turbo": "^1.6",
-    "typescript": "^4.9"
-  },
-  "workspaces": [
-    "packages/*",
-    "components/*",
-    "apps/*"
-  ]
+    "private": true,
+    "license": "BSD 3-Clause",
+    "description": "AdaLiszk.io, a personal website with its various modules.",
+    "repository": "github:adaliszk/adaliszk.io",
+    "type": "module",
+    "scripts": {
+        "format": "biome format --write . && biome lint --apply-unsafe ./src",
+        "lint": "biome lint ./src && astro check",
+        "start": "turbo build-deps && astro dev",
+        "build": "rm -rf dist && pnpm lint && astro build",
+        "preview": "turbo build && astro preview --open",
+        "deploy": "wrangler -c wrangler.toml pages deploy ."
+    },
+    "dependencies": {
+        "@astrojs/partytown": "^2.1.0",
+        "@builder.io/partytown": "^0.10.1",
+        "@builder.io/qwik": "^1.5.2",
+        "@sentry/astro": "^7.111.0",
+        "undici": "^6.14.1"
+    },
+    "devDependencies": {
+        "@adaliszk/astro-sdk": "^4.7.0",
+        "@adaliszk/std": "^0.1.0",
+        "@biomejs/biome": "^1.7.1",
+        "@qwikdev/astro": "^0.5.14",
+        "astro": "^4.7.0",
+        "daisyui": "^4.10.2",
+        "tailwindcss": "^3.4.3",
+        "tsup": "^8.0.2",
+        "turbo": "^1.13.2",
+        "typescript": "^5.4.5",
+        "wrangler": "^3.51.2"
+    }
 }

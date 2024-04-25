@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "name": "@adaliszk/std",
+    "description": "Standard libraries for Typescript-based development",
+    "license": "BSD 2-Clause",
+    "types": "dist/bundle.d.ts",
+    "module": "dist/bundle.mjs",
+    "main": "dist/bundle.js",
+    "scripts": {
+        "lint": "biome lint ./src",
+        "build": "tsup src/bundle.ts --minify --dts --format cjs,esm --out-dir dist"
+    },
+    "dependencies": {
+        "@total-typescript/ts-reset": "^0.5.1",
+        "match-discriminated-union": "^1.0.2",
+        "option-t": "^42.1.0"
+    },
+    "exports": {
+        "./prelude": "./prelude.ts",
+        ".": {
+            "types": "./dist/bundle.d.ts",
+            "import": "./dist/bundle.mjs",
+            "require": "./dist/bundle.js"
+        }
+    }
+}

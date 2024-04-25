@@ -1,0 +1,9 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "organizeImports": { "enabled": true },
+    "formatter": { "indentStyle": "space", "indentWidth": 4 },
+    "linter": { "enabled": true, "rules": { "recommended": true } },
+    "javascript": { "formatter": { "enabled": true, "bracketSameLine": true } },
+    "json": { "formatter": { "enabled": true } },
+    "css": { "formatter": { "enabled": true } }
+}

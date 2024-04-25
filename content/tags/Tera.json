@@ -1,0 +1,6 @@
+{
+    "$schema": "../../.astro/collections/tags.schema.json",
+    "name": "Tera",
+    "slug": "tera",
+    "icon": ""
+}

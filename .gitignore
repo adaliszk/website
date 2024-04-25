@@ -1,7 +1,22 @@
-**/node_modules
-node_modules
+# Editors
+/.idea
+/.vscode
 
-**/.turbo
-**/dist
-**/server
-**/temp
+# Project
+/.astro
+/.wrangler
+/content/**/*.schema.json
+/**/.turbo
+/**/dist
+
+# Node
+/**/node_modules
+/node_modules
+
+
+# Logs
+**/*.log*
+*.log*
+
+# Environment
+.env
