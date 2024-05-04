@@ -1,4 +1,6 @@
 packages:
+  - 'design'
+  - 'content'
   - 'packages/*'
   - 'services/*'
-  - 'apps/*'
+  - 'sites/*'

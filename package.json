@@ -5,31 +5,21 @@
     "repository": "github:adaliszk/adaliszk.io",
     "type": "module",
     "scripts": {
-        "format": "biome format --write . && biome lint --apply-unsafe ./src",
-        "lint": "biome lint ./src && astro check",
-        "start": "turbo build-deps && astro dev",
-        "build": "rm -rf dist && pnpm lint && astro build",
-        "preview": "turbo build && astro preview --open",
-        "deploy": "wrangler -c wrangler.toml pages deploy ."
-    },
-    "dependencies": {
-        "@astrojs/partytown": "^2.1.0",
-        "@builder.io/partytown": "^0.10.1",
-        "@builder.io/qwik": "^1.5.2",
-        "@sentry/astro": "^7.111.0",
-        "undici": "^6.14.1"
+        "fmt": "biome format --write .",
+        "lint": "turbo lint",
+        "build": "turbo build"
     },
     "devDependencies": {
-        "@adaliszk/astro-sdk": "^4.7.0",
-        "@adaliszk/std": "^0.1.0",
-        "@biomejs/biome": "^1.7.1",
-        "@qwikdev/astro": "^0.5.14",
-        "astro": "^4.7.0",
-        "daisyui": "^4.10.2",
-        "tailwindcss": "^3.4.3",
+        "@adaliszk/biome": "^1.7.4",
+        "@adaliszk/typescript": "^5.4.2",
+        "@adaliszk/typescript-testing": "^5.4.3",
+        "@adaliszk/std": "workspace:*",
+        "@swc/core": "^1.4.17",
         "tsup": "^8.0.2",
-        "turbo": "^1.13.2",
+        "turbo": "^1.13.3",
         "typescript": "^5.4.5",
-        "wrangler": "^3.51.2"
+        "vite": "^5.2.11",
+        "vitest": "^1.6.0",
+        "wrangler": "^3.53.1"
     }
 }
