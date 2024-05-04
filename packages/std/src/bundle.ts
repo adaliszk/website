@@ -1,4 +1,4 @@
-export * from "match-discriminated-union";
-export * from "option-t";
+export * from "./result";
+export * from "./match";
 
 import "./array-helpers";

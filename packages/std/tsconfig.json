@@ -1,8 +1,4 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-        "types": []
-    },
-    "exclude": ["node_modules"],
-    "include": ["src/**/*"]
+    "extends": "@adaliszk/typescript",
+    "include": ["*.config.ts", "prelude.ts", "src/**/*"]
 }
