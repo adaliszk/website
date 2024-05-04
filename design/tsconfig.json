@@ -1,0 +1,4 @@
+{
+    "extends": "@adaliszk/typescript",
+    "include": ["src/*.d.ts","src/**/*"]
+}
