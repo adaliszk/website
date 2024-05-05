@@ -1,0 +1,15 @@
+<style>
+  div[data-item-id$="-hidden"] {
+    display: none !important;
+  }
+</style>
+<script>
+    console.log("Manager head initialized.")
+    setTimeout(() => {
+        const hiddenItems = document.querySelectorAll('div[data-item-id$="-hidden"]')
+        console.log("Removing items:", hiddenItems)
+        hiddenItems?.forEach((item) => {
+            item.remove()
+        })
+    }, 100)
+</script>

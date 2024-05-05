@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inconsolata";
+    src: url("/assets/fonts/inconsolata.woff2") format("woff2"), url("/assets/fonts/inconsolata.woff") format("woff");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Oswald";
+    src: url("/assets/fonts/oswald.woff2") format("woff2"), url("/assets/fonts/oswald.woff") format("woff");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body, td, th {
+  font-family: Inconsolata, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-theme="dark"], html[data-theme="dark"] .docs-story {
+  @apply text-white bg-background;
+}
+
+html[data-theme="light"], html[data-theme="light"] .docs-story {
+  @apply text-black bg-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, Helvetica, sans-serif;
+  font-weight: bold;
+}

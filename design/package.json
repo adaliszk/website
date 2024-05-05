@@ -1,23 +1,46 @@
 {
-    "version": "0.1.0",
+    "private": true,
     "name": "@adaliszk.io/design",
-    "description": "Collection of utility components and helpers on top of Daisy UI and Tailwind.",
+    "description": "Collection of utility components and helpers on top of Tailwind.",
+    "author": "Ádám Liszkai <website@adaliszk.dev>",
+    "repository": "github:adaliszk/adaliszk.io",
     "license": "BSD 2-Clause",
-    "types": "dist/bundle.d.ts",
-    "main": "dist/bundle.js",
     "type": "module",
     "scripts": {
+        "format": "biome format --write . && biome lint --apply-unsafe ./src",
         "lint": "biome lint ./src",
-        "build": "tsup src/bundle.ts --clean --minify --dts --format esm --out-dir dist"
+        "build": "rm -rf dist lib && qwik build",
+        "build.types": "tsc -p tsconfig.build.json --emitDeclarationOnly",
+        "build.lib": "vite build --mode lib",
+        "build.docs": "storybook build",
+        "dev": "storybook dev -p 6006 --no-open"
+    },
+    "trustedDependencies": ["sharp"],
+    "peerDependencies": {
+        "@builder.io/qwik": "^1.5",
+        "@builder.io/qwik-city": "^1.5",
+        "@tailwindcss/typography": "^0.5",
+        "tailwindcss": "^3.4"
     },
     "dependencies": {
-        "@adaliszk/qwik": "^1.5.4",
+        "tailwind-merge": "~2.3.0",
+        "canvas": "~2.11.2"
+    },
+    "devDependencies": {
+        "@adaliszk/qwik": "^1.5.7",
+        "@adaliszk/qwik-storybook": "^8.0.2",
+        "@builder.io/qwik": "^1.5.3",
+        "@builder.io/qwik-city": "^1.5.3",
+        "@storybook/blocks": "^8.0.10",
         "@tailwindcss/typography": "^0.5.13",
-        "daisyui": "^4.10.5",
-        "tailwind-merge": "^2.3.0",
         "tailwindcss": "^3.4.3"
     },
+    "files": ["dist", "*.md"],
     "exports": {
+        "./components": {
+            "types": "./dist/components.d.ts",
+            "import": "./dist/components.js"
+        },
         ".": {
             "types": "./dist/bundle.d.ts",
             "import": "./dist/bundle.js"

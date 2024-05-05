@@ -1,1 +1,1 @@
-export * from "./defineConfig.js";
+export * from "./styles/defineConfig.js";

@@ -6,13 +6,14 @@
 /.astro
 /.wrangler
 /content/**/*.schema.json
+/content/**/index.ts
 /**/.turbo
 /**/dist
+/**/lib
 
 # Node
 /**/node_modules
 /node_modules
-
 
 # Logs
 **/*.log*
