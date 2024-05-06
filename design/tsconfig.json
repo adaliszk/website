@@ -1,9 +1,10 @@
 {
     "extends": "@adaliszk/qwik",
-    "include": ["vite.*", "src/**/*.tsx", "src/**/*"],
+    "include": ["vite.*", "src"],
     "compilerOptions": {
         "moduleResolution": "NodeNext",
-        "jsxImportSource": "../node_modules/@builder.io/qwik",
+        "jsxImportSource": "@builder.io/qwik",
+        "jsx": "react-jsx",
         "baseUrl": "src",
         "outDir": "dist"
     }

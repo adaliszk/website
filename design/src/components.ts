@@ -1,5 +1,5 @@
-export * from "layout/SiteHeader.js"
-export * from "layout/SiteContent.js"
-export * from "layout/SiteFooter.js"
+export * from "./layout/SiteHeader.jsx";
+export * from "./layout/SiteContent.jsx";
+export * from "./layout/SiteFooter.jsx";
 
-export * from "navigation/NavigationMenu.js"
+export * from "./navigation/NavigationMenu.jsx";

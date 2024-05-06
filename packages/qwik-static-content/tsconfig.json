@@ -1,0 +1,12 @@
+{
+    "extends": "@adaliszk/typescript",
+    "compilerOptions": {
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        "types": ["vite/client", "vitest"],
+        "baseUrl": "src",
+        "outDir": "dist"
+    },
+    "include": ["*.config.ts", "./src/**/*.d.ts", "./src/**/*"],
+    "exclude": ["node_modules"]
+}

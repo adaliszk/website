@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "name": "@adaliszk/qwik-static-content",
+    "description": "Helper library for accessing and rendering MDX files.",
+    "repository": "github:adaliszk/adaliszk.io",
+    "license": "BSD 2-Clause",
+    "type": "module",
+    "scripts": {
+        "format": "biome format --write ./src && biome lint --apply ./src",
+        "lint": "biome lint ./src",
+        "build": "tsup src/bundle.ts --clean --format esm --dts --out-dir dist"
+    },
+    "peerDependencies": {
+        "@adaliszk/std": "workspace:*",
+        "@builder.io/qwik": "^1.5"
+    },
+    "dependencies": {
+        "camelcase": "^8.0.0",
+        "chokidar": "^3.6.0",
+        "zod": "^3.23.6"
+    },
+    "devDependencies": {
+        "@adaliszk/std": "workspace:*",
+        "@builder.io/qwik": "^1.5.3"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/bundle.d.ts",
+            "import": "./dist/bundle.js",
+            "require": "./dist/bundle.js"
+        }
+    },
+    "types": "dist/bundle.d.ts",
+    "module": "dist/bundle.js",
+    "main": "dist/bundle.js"
+}

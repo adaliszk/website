@@ -1,0 +1,10 @@
+{
+    "extends": "@adaliszk/typescript",
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext"
+    },
+    "exclude": ["node_modules"],
+    "include": ["**/*"]
+}

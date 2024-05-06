@@ -1,5 +1,5 @@
-import { component$, Slot } from "@builder.io/qwik"
-import { twMerge } from "tailwind-merge"
+import { component$, Slot } from "@builder.io/qwik";
+import { twMerge } from "tailwind-merge";
 
 export type SiteHeaderProps = {
     class?: string;

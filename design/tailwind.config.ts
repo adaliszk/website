@@ -1,3 +1,5 @@
-import { defineConfig } from "./src/bundle.js";
+import { defineConfig } from "./src/bundle";
 
-export default defineConfig();
+export default defineConfig({
+    content: ["./src/**/*.{html,css,tsx,ts}", "./src/*.{html,css,tsx,ts}"],
+});

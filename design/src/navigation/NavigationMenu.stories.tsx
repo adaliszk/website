@@ -3,16 +3,16 @@ import type { NavigationMenuProps } from "./NavigationMenu.jsx"
 import { NavigationMenu } from "./NavigationMenu.jsx"
 import { SiteHeader } from "../layout/SiteHeader.jsx"
 
+const currentUrl = "/";
 const items = [
-    { label: "Updates", href: "/" },
-    { label: "Resume", href: "/resume" },
-    { label: "Blog", href: "/blog" },
     { label: "Projects", href: "/projects" },
     { label: "Tools", href: "/tools" },
     { label: "Snippets", href: "/snippets" },
+    { label: "Resume", href: "/resume" },
+    { label: "Blog", href: "/blog" },
 ];
 
-type Story = StoryObj<NavigationMenuProps>
+type Story = StoryObj<NavigationMenuProps>;
 
 /**
  * The `<NavigationMenu />` component displays a horizontal menu of links with a sliding highlight effect.
@@ -22,9 +22,7 @@ type Story = StoryObj<NavigationMenuProps>
 export default {
     title: "Navigation/NavigationMenu",
     component: NavigationMenu,
-    render: (args) => (
-        <NavigationMenu {...args} />
-    ),
+    render: (args) => <NavigationMenu {...args} />,
     parameters: {
         layout: "padded",
     },
@@ -43,7 +41,8 @@ export default {
         },
         items: {
             type: "NavigationMenuItem[]" as "string", // Hack to specify the type here
-            description: "Items to display in the menu with their labels, hrefs, and optional regexp matchers",
+            description:
+                "Items to display in the menu with their labels, hrefs, and optional regexp matchers",
             controls: {
                 type: "object",
             },
@@ -58,6 +57,7 @@ export default {
 
 export const ShowcaseHidden: Story = {
     args: {
+        currentUrl,
         items,
     },
 };
@@ -69,8 +69,8 @@ export const Example = {
     render: () => (
         <>
             <SiteHeader>
-                <NavigationMenu items={items} />
+                <NavigationMenu currentUrl={currentUrl} items={items} />
             </SiteHeader>
         </>
-    )
-}
+    ),
+};

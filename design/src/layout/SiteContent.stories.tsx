@@ -1,6 +1,6 @@
-import type { Meta } from "storybook-framework-qwik";
-import type { SiteContentProps } from "./SiteContent.jsx";
-import { SiteContent } from "./SiteContent.jsx";
+import type { Meta } from "storybook-framework-qwik"
+import type { SiteContentProps } from "./SiteContent.jsx"
+import { SiteContent } from "./SiteContent.jsx"
 
 export default {
     title: "Layout/SiteContent",

@@ -3,8 +3,6 @@
     "name": "@adaliszk/std",
     "description": "Standard libraries for Typescript-based development",
     "license": "BSD 2-Clause",
-    "types": "dist/bundle.d.ts",
-    "main": "dist/bundle.js",
     "type": "module",
     "scripts": {
         "format": "biome format . --write",
@@ -15,12 +13,16 @@
         "@total-typescript/ts-reset": "^0.5.1",
         "option-t": "^43.0.0"
     },
+    "files": ["dist/*", "prelude.ts", "*.md"],
     "exports": {
         "./prelude": "./prelude.ts",
         ".": {
             "types": "./dist/bundle.d.ts",
-            "import": "./dist/bundle.mjs",
-            "require": "./dist/bundle.js"
+            "import": "./dist/bundle.js",
+            "default": "./dist/bundle.js"
         }
-    }
+    },
+    "types": "dist/bundle.d.ts",
+    "module": "dist/bundle.js",
+    "main": "dist/bundle.js"
 }

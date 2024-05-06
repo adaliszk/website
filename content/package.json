@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "version": "0.3.0",
+    "name": "@adaliszk.io/content",
+    "description": "The content for the adaliszk.io sites in MDX and JSON format.",
+    "main": "./prelude.ts",
+    "type": "module",
+    "scripts": {
+        "format": "biome format --write .",
+        "lint": "biome lint ./schemas.ts ./prelude.ts",
+        "build": "echo 'Cannot pre-build this package, skipping...' && exit 0"
+    },
+    "dependencies": {
+        "@adaliszk/qwik-static-content": "workspace:*"
+    }
+}

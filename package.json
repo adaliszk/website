@@ -9,6 +9,9 @@
         "format": "biome format --write .",
         "lint": "turbo lint",
         "build": "turbo build",
+        "pkg:qsc": "pnpm --filter @adaliszk/qwik-static-content run",
+        "pkg:std": "pnpm --filter @adaliszk/std run",
+        "content": "pnpm --filter @adaliszk.io/content run",
         "design": "pnpm --filter @adaliszk.io/design run",
         "www": "pnpm --filter @adaliszk.io/www run"
     },
@@ -22,10 +25,10 @@
     ],
     "devDependencies": {
         "@adaliszk/biome": "^1.7.4",
+        "@adaliszk/qwik": "^1.5.6",
         "@adaliszk/typescript": "^5.4.2",
         "@adaliszk/typescript-testing": "^5.4.3",
         "@adaliszk/web-compiler": "^5.2.10",
-        "@adaliszk/qwik": "^1.5.6",
         "@swc/core": "^1.4.17",
         "esbuild": "^0.20.2",
         "tsup": "^8.0.2",
@@ -34,5 +37,12 @@
         "vite": "^5.2.11",
         "vitest": "^1.6.0",
         "wrangler": "^3.53.1"
-    }
+    },
+    "workspaces": [
+        "packages/*",
+        "services/*",
+        "content",
+        "design",
+        "sites/*"
+    ]
 }

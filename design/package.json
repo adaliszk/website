@@ -1,5 +1,6 @@
 {
     "private": true,
+    "version": "0.8.0",
     "name": "@adaliszk.io/design",
     "description": "Collection of utility components and helpers on top of Tailwind.",
     "author": "Ádám Liszkai <website@adaliszk.dev>",
@@ -18,7 +19,6 @@
     "trustedDependencies": ["sharp"],
     "peerDependencies": {
         "@builder.io/qwik": "^1.5",
-        "@builder.io/qwik-city": "^1.5",
         "@tailwindcss/typography": "^0.5",
         "tailwindcss": "^3.4"
     },
@@ -29,21 +29,15 @@
     "devDependencies": {
         "@adaliszk/qwik": "^1.5.7",
         "@adaliszk/qwik-storybook": "^8.0.2",
-        "@builder.io/qwik": "^1.5.3",
-        "@builder.io/qwik-city": "^1.5.3",
-        "@storybook/blocks": "^8.0.10",
+        "@builder.io/qwik": "1.5.2",
+        "@builder.io/qwik-city": "1.5.2",
+        "@storybook/blocks": "^8.0.9",
         "@tailwindcss/typography": "^0.5.13",
         "tailwindcss": "^3.4.3"
     },
     "files": ["dist", "*.md"],
-    "exports": {
-        "./components": {
-            "types": "./dist/components.d.ts",
-            "import": "./dist/components.js"
-        },
-        ".": {
-            "types": "./dist/bundle.d.ts",
-            "import": "./dist/bundle.js"
-        }
-    }
+    "types": "lib/bundle.d.ts",
+    "qwik": "lib/bundle.js",
+    "module": "lib/bundle.js",
+    "main": "lib/bundle.js"
 }
