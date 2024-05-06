@@ -1,6 +1,6 @@
 import { defineConfig } from "@adaliszk.io/design"
 
-export default defineConfig({
+export default defineConfig({it 
     content: [
         "../../node_modules/@adaliszk.io/design/**/*.js",
         "./node_modules/@adaliszk.io/design/**/*.js",
