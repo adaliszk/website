@@ -1,2 +1,2 @@
-export * from "./styles/defineConfig.js";
-export * from "./components.js";
+export * from "./styles/defineConfig.ts";
+export * from "./components.ts";

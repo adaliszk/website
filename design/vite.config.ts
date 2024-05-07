@@ -5,10 +5,12 @@ import pkg from "./package.json";
 const makeRegex = (dep: string) => new RegExp(`^${dep}(/.*)?$`);
 const excludeAll = (obj: object) => Object.keys(obj).map(makeRegex);
 
+// noinspection JSUnusedGlobalSymbols
 export default webConfig({
     https: false,
     tsconfig: "tsconfig.build.json",
     plugins: [qwikVite()],
+    publicDir: "../resources",
     build: {
         target: "es2020",
         lib: {

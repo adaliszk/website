@@ -2,7 +2,9 @@
     "extends": "@adaliszk/qwik",
     "include": ["vite.*", "src"],
     "compilerOptions": {
+        "module": "NodeNext",
         "moduleResolution": "NodeNext",
+        "allowImportingTsExtensions": true,
         "jsxImportSource": "@builder.io/qwik",
         "jsx": "react-jsx",
         "baseUrl": "src",

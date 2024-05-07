@@ -1,4 +1,4 @@
-import { defineCollection, z } from "@adaliszk/qwik-static-content"
+import { defineCollection, z } from "@adaliszk/qwik-static-content";
 
 // region: Shared Types
 

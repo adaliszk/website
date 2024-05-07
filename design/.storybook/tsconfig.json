@@ -4,8 +4,6 @@
         "types": ["vite/client", "storybooks"],
         "allowImportingTsExtensions": true,
         "jsx": "preserve",
-        "moduleResolution": "Node16",
-        "module": "CommonJS",
         "rootDir": "../"
     },
     "exclude": ["../**/*.spec.ts", "../**/*.test.ts", "../**/*.spec.tsx", "../**/*.test.tsx"],

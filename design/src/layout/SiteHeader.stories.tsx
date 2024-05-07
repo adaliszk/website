@@ -1,6 +1,6 @@
-import type { Meta } from "storybook-framework-qwik"
-import type { SiteHeaderProps } from "./SiteHeader.jsx"
-import { SiteHeader } from "./SiteHeader.jsx"
+import type { Meta } from "storybook-framework-qwik";
+import type { SiteHeaderProps } from "./SiteHeader.jsx";
+import { SiteHeader } from "./SiteHeader.jsx";
 
 export default {
     title: "Layout/SiteHeader",

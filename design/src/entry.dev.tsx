@@ -12,6 +12,7 @@
 import { render, type RenderOptions } from "@builder.io/qwik";
 import Root from "./root.jsx";
 
+// noinspection JSUnusedGlobalSymbols
 export default function (opts: RenderOptions) {
     return render(document, <Root />, opts);
 }

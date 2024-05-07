@@ -1,6 +1,6 @@
-import type { Meta } from "storybook-framework-qwik"
-import type { SiteFooterProps } from "./SiteFooter.jsx"
-import { SiteFooter } from "./SiteFooter.jsx"
+import type { Meta } from "storybook-framework-qwik";
+import type { SiteFooterProps } from "./SiteFooter.jsx";
+import { SiteFooter } from "./SiteFooter.jsx";
 
 export default {
     title: "Layout/SiteFooter",

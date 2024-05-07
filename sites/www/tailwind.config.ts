@@ -1,6 +1,7 @@
-import { defineConfig } from "@adaliszk.io/design"
+import { defineConfig } from "@adaliszk.io/design";
 
-export default defineConfig({it 
+// noinspection JSUnusedGlobalSymbols
+export default defineConfig({
     content: [
         "../../node_modules/@adaliszk.io/design/**/*.js",
         "./node_modules/@adaliszk.io/design/**/*.js",

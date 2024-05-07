@@ -1,6 +1,6 @@
-import { webConfig } from "@adaliszk/web-compiler"
-import { qwikCity } from "@builder.io/qwik-city/vite"
-import { qwikVite } from "@builder.io/qwik/optimizer"
+import { webConfig } from "@adaliszk/web-compiler";
+import { qwikCity } from "@builder.io/qwik-city/vite";
+import { qwikVite } from "@builder.io/qwik/optimizer";
 
 export default webConfig({
     https: false,

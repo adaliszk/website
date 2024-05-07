@@ -1,13 +1,10 @@
-import type { Config } from "tailwindcss"
-import typography from "@tailwindcss/typography"
+import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 export function defineConfig(config?: Partial<Config>): Config {
     return {
         jit: true,
-        content: [
-            "./src/**/*.{html,css,tsx,ts}",
-            "./src/*.{html,css,tsx,ts}",
-        ],
+        content: ["./src/**/*.{html,css,tsx,ts}", "./src/*.{html,css,tsx,ts}"],
         plugins: [typography],
         theme: {
             colors: {

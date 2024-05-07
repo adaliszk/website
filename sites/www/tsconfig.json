@@ -3,11 +3,8 @@
     "include": ["vite.*", "src/**/*.tsx", "src/**/*"],
     "compilerOptions": {
         "moduleResolution": "NodeNext",
-        "jsxImportSource": "../../node_modules/@builder.io/qwik",
+        "jsxImportSource": "@builder.io/qwik",
         "baseUrl": "src",
-        "outDir": "dist",
-        "paths": {
-            "@adaliszk.io/design/*": ["../../../design/lib/*"]
-        }
+        "outDir": "dist"
     }
 }

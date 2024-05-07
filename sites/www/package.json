@@ -11,15 +11,12 @@
         "build.server": "vite build -c ssg.config.ts",
         "format": "biome format --write . && biome lint --apply-unsafe ./src",
         "lint": "biome lint ./src",
-        "pages": "wrangler pages deploy",
-        "preview": "turbo build-deps && qwik preview",
-        "start": "vite --mode ssr --open",
         "dev": "vite --mode ssr"
     },
     "trustedDependencies": ["sharp"],
     "dependencies": {
-        "@builder.io/qwik": "^1.5.3",
-        "@builder.io/qwik-city": "^1.5.3",
+        "@builder.io/qwik": "1.5.2",
+        "@builder.io/qwik-city": "1.5.2",
         "undici": "^6.15.0"
     },
     "devDependencies": {

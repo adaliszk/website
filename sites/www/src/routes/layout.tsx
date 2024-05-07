@@ -1,9 +1,14 @@
-import type { RequestHandler } from "@builder.io/qwik-city"
-import { useLocation } from "@builder.io/qwik-city"
-import { component$, Slot } from "@builder.io/qwik"
+import { Slot, component$ } from "@builder.io/qwik";
+import type { RequestHandler } from "@builder.io/qwik-city";
+import { useLocation } from "@builder.io/qwik-city";
 
-import type { NavigationMenuItem } from "@adaliszk.io/design/compents"
-import { NavigationMenu, SiteContent, SiteFooter, SiteHeader } from "@adaliszk.io/design/components"
+import {
+    NavigationLink,
+    NavigationMenu,
+    SiteContent,
+    SiteFooter,
+    SiteHeader,
+} from "@adaliszk.io/design";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
     // Control caching for this request for best performance and to reduce hosting costs:
@@ -18,28 +23,17 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
     const { url } = useLocation();
-    const navLinks: NavigationMenuItem[] = [
-        {
-            label: "Projects",
-            match: /\/?|\/projects/i,
-            href: "/projects",
-        },
-        {
-            label: "Biography",
-            match: /\/biography/i,
-            href: "/biography",
-        },
-        // {
-        //     label: "Articles",
-        //     match: /\/blog/i,
-        //     href: "/blog",
-        // },
-    ]
-
     return (
         <>
             <SiteHeader>
-                <NavigationMenu currentUrl={url.href} items={navLinks} />
+                <NavigationMenu>
+                    <NavigationLink label={"Updates"} href={"/"} isActive={true} />
+                    <NavigationLink label={"Projects"} href={"/projects"} />
+                    <NavigationLink label={"Snippets"} href={"/snippets"} />
+                    <NavigationLink label={"Tools"} href={"/tools"} />
+                    <NavigationLink label={"Biography"} href={"/biography"} />
+                    <NavigationLink label={"Blog"} href={"/blog"} />
+                </NavigationMenu>
             </SiteHeader>
 
             <SiteContent>

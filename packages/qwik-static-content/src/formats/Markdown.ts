@@ -1,12 +1,12 @@
-import type { CollectionDefinition, CollectionParser } from "../defineCollection.js"
-import type { ZodSchema } from "zod"
+import type { CollectionDefinition, CollectionParser } from "../defineCollection.js";
+import type { ZodSchema } from "zod";
 
-import type { Result } from "@adaliszk/std"
-import { createOk } from "@adaliszk/std"
+import type { Result } from "@adaliszk/std";
+import { createOk } from "@adaliszk/std";
 
-import { readdir, writeFile } from "node:fs/promises"
-import { resolve } from "node:path"
-import caseParser from "camelcase"
+import { readdir, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import caseParser from "camelcase";
 
 const toPascalCase = (text: string) => caseParser(text, { pascalCase: true });
 

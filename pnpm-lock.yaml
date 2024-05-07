@@ -12,26 +12,26 @@ importers:
         specifier: ^1.7.4
         version: 1.7.4
       '@adaliszk/qwik':
-        specifier: ^1.5.6
-        version: 1.5.7(@builder.io/qwik-city@1.5.3(@types/node@20.12.8)(rollup@4.17.2))(@builder.io/qwik@1.5.3(@types/node@20.12.8)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
+        specifier: ^1.5.7
+        version: 1.5.7(@builder.io/qwik-city@1.5.3(@types/node@20.12.10)(rollup@4.17.2))(@builder.io/qwik@1.5.3(@types/node@20.12.10)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
       '@adaliszk/typescript':
         specifier: ^5.4.2
         version: 5.4.2(typescript@5.4.5)
       '@adaliszk/typescript-testing':
         specifier: ^5.4.3
-        version: 5.4.3(vitest@1.6.0(@types/node@20.12.8))
+        version: 5.4.3(vitest@1.6.0(@types/node@20.12.10))
       '@adaliszk/web-compiler':
         specifier: ^5.2.10
-        version: 5.2.10(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))(vue-tsc@1.8.27(typescript@5.4.5))
+        version: 5.2.10(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))(vue-tsc@1.8.27(typescript@5.4.5))
       '@swc/core':
-        specifier: ^1.4.17
-        version: 1.4.17
+        specifier: ^1.5.3
+        version: 1.5.3
       esbuild:
         specifier: ^0.20.2
         version: 0.20.2
       tsup:
         specifier: ^8.0.2
-        version: 8.0.2(@microsoft/api-extractor@7.43.0(@types/node@20.12.8))(@swc/core@1.4.17)(postcss@8.4.38)(typescript@5.4.5)
+        version: 8.0.2(@microsoft/api-extractor@7.43.0(@types/node@20.12.10))(@swc/core@1.5.3)(postcss@8.4.38)(typescript@5.4.5)
       turbo:
         specifier: ^1.13.3
         version: 1.13.3
@@ -40,10 +40,10 @@ importers:
         version: 5.4.5
       vite:
         specifier: ^5.2.11
-        version: 5.2.11(@types/node@20.12.8)
+        version: 5.2.11(@types/node@20.12.10)
       vitest:
         specifier: ^1.6.0
-        version: 1.6.0(@types/node@20.12.8)
+        version: 1.6.0(@types/node@20.12.10)
       wrangler:
         specifier: ^3.53.1
         version: 3.53.1
@@ -65,22 +65,31 @@ importers:
     devDependencies:
       '@adaliszk/qwik':
         specifier: ^1.5.7
-        version: 1.5.7(@builder.io/qwik-city@1.5.2(@types/node@20.12.8)(rollup@4.17.2))(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
+        version: 1.5.7(@builder.io/qwik-city@1.5.2(@types/node@20.12.10)(rollup@4.17.2))(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
       '@adaliszk/qwik-storybook':
         specifier: ^8.0.2
-        version: 8.0.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(@storybook/addon-actions@8.0.10)(@storybook/components@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.8)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.2)(typescript@5.4.5)(undici@6.15.0)(vite@5.2.11(@types/node@20.12.8))(vitest@1.6.0(@types/node@20.12.8))
+        version: 8.0.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(@storybook/addon-actions@8.0.10)(@storybook/components@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.2)(typescript@5.4.5)(undici@6.15.0)(vite@5.2.11(@types/node@20.12.10))(vitest@1.6.0(@types/node@20.12.10))
+      '@adaliszk/typescript':
+        specifier: ^5.4.2
+        version: 5.4.2(typescript@5.4.5)
       '@builder.io/qwik':
         specifier: 1.5.2
-        version: 1.5.2(@types/node@20.12.8)(undici@6.15.0)
+        version: 1.5.2(@types/node@20.12.10)(undici@6.15.0)
       '@builder.io/qwik-city':
         specifier: 1.5.2
-        version: 1.5.2(@types/node@20.12.8)(rollup@4.17.2)
+        version: 1.5.2(@types/node@20.12.10)(rollup@4.17.2)
       '@storybook/blocks':
         specifier: ^8.0.9
         version: 8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tailwindcss/typography':
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.3)
+      storybook:
+        specifier: ^8.0.10
+        version: 8.0.10(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      storybook-framework-qwik:
+        specifier: ^0.4.0
+        version: 0.4.0(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
@@ -102,7 +111,7 @@ importers:
         version: link:../std
       '@builder.io/qwik':
         specifier: ^1.5.3
-        version: 1.5.3(@types/node@20.12.8)(undici@6.15.0)
+        version: 1.5.3(@types/node@20.12.10)(undici@6.15.0)
 
   packages/std:
     dependencies:
@@ -116,11 +125,11 @@ importers:
   sites/www:
     dependencies:
       '@builder.io/qwik':
-        specifier: ^1.5.3
-        version: 1.5.3(@types/node@20.12.8)(undici@6.15.0)
+        specifier: 1.5.2
+        version: 1.5.2(@types/node@20.12.10)(undici@6.15.0)
       '@builder.io/qwik-city':
-        specifier: ^1.5.3
-        version: 1.5.3(@types/node@20.12.8)(rollup@4.17.2)
+        specifier: 1.5.2
+        version: 1.5.2(@types/node@20.12.10)(rollup@4.17.2)
       undici:
         specifier: ^6.15.0
         version: 6.15.0
@@ -133,7 +142,7 @@ importers:
         version: link:../../design
       '@adaliszk/qwik':
         specifier: ^1.5.7
-        version: 1.5.7(@builder.io/qwik-city@1.5.3(@types/node@20.12.8)(rollup@4.17.2))(@builder.io/qwik@1.5.3(@types/node@20.12.8)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
+        version: 1.5.7(@builder.io/qwik-city@1.5.2(@types/node@20.12.10)(rollup@4.17.2))(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)
       '@adaliszk/std':
         specifier: workspace:*
         version: link:../../packages/std
@@ -818,55 +827,55 @@ packages:
     resolution: {integrity: sha512-6mQNsaLeXTw0nxYUYu+NSa4Hx4BlF1x1x8/PMFbiR+GBSr+2DkECc69b8hgy2frEodNcvPffeH8YfWd3LI6jhQ==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@1.7.2':
-    resolution: {integrity: sha512-6Skx9N47inLQzYi9RKgJ7PBnUnaHnMe/imqX43cOcJjZtfMnQLxEvfM2Eyo7gChkwrZlwc+VbA4huFRjw2fsYA==}
+  '@biomejs/biome@1.7.3':
+    resolution: {integrity: sha512-ogFQI+fpXftr+tiahA6bIXwZ7CSikygASdqMtH07J2cUzrpjyTMVc9Y97v23c7/tL1xCZhM+W9k4hYIBm7Q6cQ==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@1.7.2':
-    resolution: {integrity: sha512-CrldIueHivWEWmeTkK8bTXajeX53F8i2Rrkkt8cPZyMtzkrwxf8Riq4a/jz3SQBHkxHFT4TqGbSTNMXe3X1ogA==}
+  '@biomejs/cli-darwin-arm64@1.7.3':
+    resolution: {integrity: sha512-eDvLQWmGRqrPIRY7AIrkPHkQ3visEItJKkPYSHCscSDdGvKzYjmBJwG1Gu8+QC5ed6R7eiU63LEC0APFBobmfQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@1.7.2':
-    resolution: {integrity: sha512-UELnLJuJOsTL9meArvn8BtiXDURyPil2Ej9me2uVpEvee8UQdqd/bssP5we400OWShlL1AAML4fn6d2WX5332g==}
+  '@biomejs/cli-darwin-x64@1.7.3':
+    resolution: {integrity: sha512-JXCaIseKRER7dIURsVlAJacnm8SG5I0RpxZ4ya3dudASYUc68WGl4+FEN03ABY3KMIq7hcK1tzsJiWlmXyosZg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@1.7.2':
-    resolution: {integrity: sha512-kKYZiem7Sj7wI0dpVxJlK7C+TFQwzO/ctufIGXGJAyEmUe9vEKSzV8CXpv+JIRiTWyqaZJ4K+eHz4SPdPCv05w==}
+  '@biomejs/cli-linux-arm64-musl@1.7.3':
+    resolution: {integrity: sha512-c8AlO45PNFZ1BYcwaKzdt46kYbuP6xPGuGQ6h4j3XiEDpyseRRUy/h+6gxj07XovmyxKnSX9GSZ6nVbZvcVUAw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@1.7.2':
-    resolution: {integrity: sha512-Z1CSGQE6fHz55gkiFHv9E8wEAaSUd7dHSRaxSCBa7utonHqpIeMbvj3Evm1w0WfGLFDtRXLV1fTfEdM0FMTOhA==}
+  '@biomejs/cli-linux-arm64@1.7.3':
+    resolution: {integrity: sha512-phNTBpo7joDFastnmZsFjYcDYobLTx4qR4oPvc9tJ486Bd1SfEVPHEvJdNJrMwUQK56T+TRClOQd/8X1nnjA9w==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@1.7.2':
-    resolution: {integrity: sha512-x10LpGMepDrLS+h2TZ6/T7egpHjGKtiI4GuShNylmBQJWfTotbFf9eseHggrqJ4WZf9yrGoVYrtbxXftuB95sQ==}
+  '@biomejs/cli-linux-x64-musl@1.7.3':
+    resolution: {integrity: sha512-UdEHKtYGWEX3eDmVWvQeT+z05T9/Sdt2+F/7zmMOFQ7boANeX8pcO6EkJPK3wxMudrApsNEKT26rzqK6sZRTRA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@1.7.2':
-    resolution: {integrity: sha512-vXXyox8/CQijBxAu0+r8FfSO7JlC4tob3PbaFda8gPJFRz2uFJw39HtxVUwbTV1EcU6wSPh4SiRu5sZfP1VHrQ==}
+  '@biomejs/cli-linux-x64@1.7.3':
+    resolution: {integrity: sha512-vnedYcd5p4keT3iD48oSKjOIRPYcjSNNbd8MO1bKo9ajg3GwQXZLAH+0Cvlr+eMsO67/HddWmscSQwTFrC/uPA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@1.7.2':
-    resolution: {integrity: sha512-kRXdlKzcU7INf6/ldu0nVmkOgt7bKqmyXRRCUqqaJfA32+9InTbkD8tGrHZEVYIWr+eTuKcg16qZVDsPSDFZ8g==}
+  '@biomejs/cli-win32-arm64@1.7.3':
+    resolution: {integrity: sha512-unNCDqUKjujYkkSxs7gFIfdasttbDC4+z0kYmcqzRk6yWVoQBL4dNLcCbdnJS+qvVDNdI9rHp2NwpQ0WAdla4Q==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@1.7.2':
-    resolution: {integrity: sha512-qHTtpAs+CNglAAuaTy09htoqUhrQyd3nd0aGTuLNqD10h1llMVi8WFZfoa+e5MuDSfYtMK6nW2Tbf6WgzzR1Qw==}
+  '@biomejs/cli-win32-x64@1.7.3':
+    resolution: {integrity: sha512-ZmByhbrnmz/UUFYB622CECwhKIPjJLLPr5zr3edhu04LzbfcOrz16VYeNq5dpO1ADG70FORhAJkaIGdaVBG00w==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -1936,68 +1945,68 @@ packages:
   '@storybook/types@8.0.10':
     resolution: {integrity: sha512-S/hKS7+SqNnYIehwxdQ4M2nnlfGDdYWAXdtPCVJCmS+YF2amgAxeuisiHbUg7eypds6VL0Oxk/j2nPEHOHk9pg==}
 
-  '@swc/core-darwin-arm64@1.4.17':
-    resolution: {integrity: sha512-HVl+W4LezoqHBAYg2JCqR+s9ife9yPfgWSj37iIawLWzOmuuJ7jVdIB7Ee2B75bEisSEKyxRlTl6Y1Oq3owBgw==}
+  '@swc/core-darwin-arm64@1.5.3':
+    resolution: {integrity: sha512-kRmmV2XqWegzGXvJfVVOj10OXhLgaVOOBjaX3p3Aqg7Do5ksg+bY5wi1gAN/Eul7B08Oqf7GG7WJevjDQGWPOg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@swc/core-darwin-x64@1.4.17':
-    resolution: {integrity: sha512-WYRO9Fdzq4S/he8zjW5I95G1zcvyd9yyD3Tgi4/ic84P5XDlSMpBDpBLbr/dCPjmSg7aUXxNQqKqGkl6dQxYlA==}
+  '@swc/core-darwin-x64@1.5.3':
+    resolution: {integrity: sha512-EYs0+ovaRw6ZN9GBr2nIeC7gUXWA0q4RYR+Og3Vo0Qgv2Mt/XudF44A2lPK9X7M3JIfu6JjnxnTuvsK1Lqojfw==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
 
-  '@swc/core-linux-arm-gnueabihf@1.4.17':
-    resolution: {integrity: sha512-cgbvpWOvtMH0XFjvwppUCR+Y+nf6QPaGu6AQ5hqCP+5Lv2zO5PG0RfasC4zBIjF53xgwEaaWmGP5/361P30X8Q==}
+  '@swc/core-linux-arm-gnueabihf@1.5.3':
+    resolution: {integrity: sha512-RBVUTidSf4wgPdv98VrgJ4rMzMDN/3LBWdT7l+R7mNFH+mtID7ZAhTON0o/m1HkECgAgi1xcbTOVAw1xgd5KLA==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
 
-  '@swc/core-linux-arm64-gnu@1.4.17':
-    resolution: {integrity: sha512-l7zHgaIY24cF9dyQ/FOWbmZDsEj2a9gRFbmgx2u19e3FzOPuOnaopFj0fRYXXKCmtdx+anD750iBIYnTR+pq/Q==}
+  '@swc/core-linux-arm64-gnu@1.5.3':
+    resolution: {integrity: sha512-DCC6El3MiTYfv98CShxz/g2s4Pxn6tV0mldCQ0UdRqaN2ApUn7E+zTrqaj5bk7yII3A43WhE9Mr6wNPbXUeVyg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
 
-  '@swc/core-linux-arm64-musl@1.4.17':
-    resolution: {integrity: sha512-qhH4gr9gAlVk8MBtzXbzTP3BJyqbAfUOATGkyUtohh85fPXQYuzVlbExix3FZXTwFHNidGHY8C+ocscI7uDaYw==}
+  '@swc/core-linux-arm64-musl@1.5.3':
+    resolution: {integrity: sha512-p04ysjYXEyaCGpJvwHm0T0nkPawXtdKBTThWnlh8M5jYULVNVA1YmC9azG2Avs1GDaLgBPVUgodmFYpdSupOYA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
 
-  '@swc/core-linux-x64-gnu@1.4.17':
-    resolution: {integrity: sha512-vRDFATL1oN5oZMImkwbgSHEkp8xG1ofEASBypze01W1Tqto8t+yo6gsp69wzCZBlxldsvPpvFZW55Jq0Rn+UnA==}
+  '@swc/core-linux-x64-gnu@1.5.3':
+    resolution: {integrity: sha512-/l4KJu0xwYm6tcVSOvF8RbXrIeIHJAhWnKvuX4ZnYKFkON968kB8Ghx+1yqBQcZf36tMzSuZUC5xBUA9u66lGA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
 
-  '@swc/core-linux-x64-musl@1.4.17':
-    resolution: {integrity: sha512-zQNPXAXn3nmPqv54JVEN8k2JMEcMTQ6veVuU0p5O+A7KscJq+AGle/7ZQXzpXSfUCXlLMX4wvd+rwfGhh3J4cw==}
+  '@swc/core-linux-x64-musl@1.5.3':
+    resolution: {integrity: sha512-54DmSnrTXq4fYEKNR0nFAImG3+FxsHlQ6Tol/v3l+rxmg2K0FeeDOpH7wTXeWhMGhFlGrLIyLSnA+SzabfoDIA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
 
-  '@swc/core-win32-arm64-msvc@1.4.17':
-    resolution: {integrity: sha512-z86n7EhOwyzxwm+DLE5NoLkxCTme2lq7QZlDjbQyfCxOt6isWz8rkW5QowTX8w9Rdmk34ncrjSLvnHOeLY17+w==}
+  '@swc/core-win32-arm64-msvc@1.5.3':
+    resolution: {integrity: sha512-piUMqoHNwDXChBfaaFIMzYgoxepfd8Ci1uXXNVEnuiRKz3FiIcNLmvXaBD7lKUwKcnGgVziH/CrndX6SldKQNQ==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
 
-  '@swc/core-win32-ia32-msvc@1.4.17':
-    resolution: {integrity: sha512-JBwuSTJIgiJJX6wtr4wmXbfvOswHFj223AumUrK544QV69k60FJ9q2adPW9Csk+a8wm1hLxq4HKa2K334UHJ/g==}
+  '@swc/core-win32-ia32-msvc@1.5.3':
+    resolution: {integrity: sha512-zV5utPYBUzYhBOomCByAjKAvfVBcOCJtnszx7Zlfz7SAv/cGm8D1QzPDCvv6jDhIlUtLj6KyL8JXeFr+f95Fjw==}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
 
-  '@swc/core-win32-x64-msvc@1.4.17':
-    resolution: {integrity: sha512-jFkOnGQamtVDBm3MF5Kq1lgW8vx4Rm1UvJWRUfg+0gx7Uc3Jp3QMFeMNw/rDNQYRDYPG3yunCC+2463ycd5+dg==}
+  '@swc/core-win32-x64-msvc@1.5.3':
+    resolution: {integrity: sha512-QmUiXiPIV5gBADfDh8e2jKynEhyRC+dcKP/zF9y5KqDUErYzlhocLd68uYS4uIegP6AylYlmigHgcaktGEE9VQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
 
-  '@swc/core@1.4.17':
-    resolution: {integrity: sha512-tq+mdWvodMBNBBZbwFIMTVGYHe9N7zvEaycVVjfvAx20k1XozHbHhRv+9pEVFJjwRxLdXmtvFZd3QZHRAOpoNQ==}
+  '@swc/core@1.5.3':
+    resolution: {integrity: sha512-pSEglypnBGLHBoBcv3aYS7IM2t2LRinubYMyP88UoFIcD2pear2CeB15CbjJ2IzuvERD0ZL/bthM7cDSR9g+aQ==}
     engines: {node: '>=10'}
     peerDependencies:
       '@swc/helpers': ^0.5.0
@@ -2144,8 +2153,11 @@ packages:
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
 
-  '@types/node@18.19.31':
-    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
+  '@types/node@18.19.32':
+    resolution: {integrity: sha512-2bkg93YBSDKk8DLmmHnmj/Rwr18TLx7/n+I23BigFwgexUJoMHZOd8X1OFxuF/W3NN0S2W2E5sVabI5CPinNvA==}
+
+  '@types/node@20.12.10':
+    resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
 
   '@types/node@20.12.8':
     resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
@@ -3236,8 +3248,8 @@ packages:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
 
-  get-tsconfig@4.7.3:
-    resolution: {integrity: sha512-ZvkrzoUA0PQZM6fy6+/Hce561s+faD1rsNwhnO5FelNjyy7EMGJ3Rz1AQ8GYDWjhRs/7dBLOEJvhK8MiEJOAFg==}
+  get-tsconfig@4.7.4:
+    resolution: {integrity: sha512-ofbkKj+0pjXjhejr007J/fLf+sW+8H7K5GCm+msC8q3IpvgjobpyPqSRFemNyIMxklC0zeJpi7VDFna19FacvQ==}
 
   giget@1.2.3:
     resolution: {integrity: sha512-8EHPljDvs7qKykr6uw8b+lqLiUc/vUg+KVTI0uND4s63TdsZM2Xus3mflvF0DDG9SiM4RlCkFGL+7aAjRmV7KA==}
@@ -5729,15 +5741,15 @@ snapshots:
 
   '@adaliszk/biome@1.7.4':
     dependencies:
-      '@biomejs/biome': 1.7.2
+      '@biomejs/biome': 1.7.3
 
-  '@adaliszk/qwik-storybook@8.0.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(@storybook/addon-actions@8.0.10)(@storybook/components@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.8)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.2)(typescript@5.4.5)(undici@6.15.0)(vite@5.2.11(@types/node@20.12.8))(vitest@1.6.0(@types/node@20.12.8))':
+  '@adaliszk/qwik-storybook@8.0.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(@storybook/addon-actions@8.0.10)(@storybook/components@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.2)(typescript@5.4.5)(undici@6.15.0)(vite@5.2.11(@types/node@20.12.10))(vitest@1.6.0(@types/node@20.12.10))':
     dependencies:
-      '@builder.io/qwik': 1.5.2(@types/node@20.12.8)(undici@6.15.0)
+      '@builder.io/qwik': 1.5.2(@types/node@20.12.10)(undici@6.15.0)
       '@storybook/addon-console': 3.0.0(@storybook/addon-actions@8.0.10)(react@18.3.1)
       '@storybook/addon-designs': 8.0.1(@storybook/blocks@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/components@8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/theming@8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-essentials': 8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@storybook/addon-interactions': 8.0.10(vitest@1.6.0(@types/node@20.12.8))
+      '@storybook/addon-interactions': 8.0.10(vitest@1.6.0(@types/node@20.12.10))
       '@storybook/addon-links': 8.0.10(react@18.3.1)
       '@storybook/addon-storysource': 8.0.10
       '@storybook/addon-themes': 8.0.10
@@ -5745,11 +5757,11 @@ snapshots:
       '@storybook/manager-api': 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/theming': 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       storybook: 8.0.10(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      storybook-framework-qwik: 0.4.0(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
+      storybook-framework-qwik: 0.4.0(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))
       typescript: 5.4.5
       undici: 6.15.0
     optionalDependencies:
-      '@builder.io/qwik-city': 1.5.3(@types/node@20.12.8)(rollup@4.17.2)
+      '@builder.io/qwik-city': 1.5.3(@types/node@20.12.10)(rollup@4.17.2)
     transitivePeerDependencies:
       - '@babel/preset-env'
       - '@jest/globals'
@@ -5778,42 +5790,42 @@ snapshots:
       - vite-plugin-glimmerx
       - vitest
 
-  '@adaliszk/qwik@1.5.7(@builder.io/qwik-city@1.5.2(@types/node@20.12.8)(rollup@4.17.2))(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)':
+  '@adaliszk/qwik@1.5.7(@builder.io/qwik-city@1.5.2(@types/node@20.12.10)(rollup@4.17.2))(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)':
     dependencies:
-      '@builder.io/qwik': 1.5.2(@types/node@20.12.8)(undici@6.15.0)
-      '@builder.io/qwik-city': 1.5.2(@types/node@20.12.8)(rollup@4.17.2)
-      '@types/node': 20.12.8
+      '@builder.io/qwik': 1.5.2(@types/node@20.12.10)(undici@6.15.0)
+      '@builder.io/qwik-city': 1.5.2(@types/node@20.12.10)(rollup@4.17.2)
+      '@types/node': 20.12.10
       typescript: 5.4.5
       undici: 6.15.0
 
-  '@adaliszk/qwik@1.5.7(@builder.io/qwik-city@1.5.3(@types/node@20.12.8)(rollup@4.17.2))(@builder.io/qwik@1.5.3(@types/node@20.12.8)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)':
+  '@adaliszk/qwik@1.5.7(@builder.io/qwik-city@1.5.3(@types/node@20.12.10)(rollup@4.17.2))(@builder.io/qwik@1.5.3(@types/node@20.12.10)(undici@6.15.0))(typescript@5.4.5)(undici@6.15.0)':
     dependencies:
-      '@builder.io/qwik': 1.5.3(@types/node@20.12.8)(undici@6.15.0)
-      '@builder.io/qwik-city': 1.5.3(@types/node@20.12.8)(rollup@4.17.2)
-      '@types/node': 20.12.8
+      '@builder.io/qwik': 1.5.3(@types/node@20.12.10)(undici@6.15.0)
+      '@builder.io/qwik-city': 1.5.3(@types/node@20.12.10)(rollup@4.17.2)
+      '@types/node': 20.12.10
       typescript: 5.4.5
       undici: 6.15.0
 
-  '@adaliszk/typescript-testing@5.4.3(vitest@1.6.0(@types/node@20.12.8))':
+  '@adaliszk/typescript-testing@5.4.3(vitest@1.6.0(@types/node@20.12.10))':
     dependencies:
       '@testdeck/core': 0.3.3
       '@testdeck/vitest': 0.3.3
       '@types/chai': 4.3.16
       chai: 5.1.0
-      vitest: 1.6.0(@types/node@20.12.8)
+      vitest: 1.6.0(@types/node@20.12.10)
 
   '@adaliszk/typescript@5.4.2(typescript@5.4.5)':
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
       tslib: 2.6.2
       tsx: 4.9.3
       typescript: 5.4.5
 
-  '@adaliszk/web-compiler@5.2.10(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))(vue-tsc@1.8.27(typescript@5.4.5))':
+  '@adaliszk/web-compiler@5.2.10(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))(vue-tsc@1.8.27(typescript@5.4.5))':
     dependencies:
       '@originjs/vite-plugin-federation': 1.3.5
       '@types/postcss-import': 14.0.3
-      '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.2.11(@types/node@20.12.8))
+      '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.2.11(@types/node@20.12.10))
       autoprefixer: 10.4.19(postcss@8.4.38)
       meow: 9.0.0
       postcss: 8.4.38
@@ -5823,11 +5835,11 @@ snapshots:
       postcss-nesting: 12.1.2(postcss@8.4.38)
       postcss-simple-vars: 7.0.1(postcss@8.4.38)
       tailwindcss: 3.4.3
-      vite: 5.2.11(@types/node@20.12.8)
-      vite-plugin-checker: 0.6.4(meow@9.0.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))(vue-tsc@1.8.27(typescript@5.4.5))
+      vite: 5.2.11(@types/node@20.12.10)
+      vite-plugin-checker: 0.6.4(meow@9.0.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))(vue-tsc@1.8.27(typescript@5.4.5))
       vite-plugin-compression2: 1.1.0(rollup@4.17.2)
-      vite-plugin-dts: 3.9.1(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
-      vite-tsconfig-paths: 4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
+      vite-plugin-dts: 3.9.1(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))
+      vite-tsconfig-paths: 4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))
     transitivePeerDependencies:
       - '@types/node'
       - eslint
@@ -6617,42 +6629,42 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
 
-  '@biomejs/biome@1.7.2':
+  '@biomejs/biome@1.7.3':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 1.7.2
-      '@biomejs/cli-darwin-x64': 1.7.2
-      '@biomejs/cli-linux-arm64': 1.7.2
-      '@biomejs/cli-linux-arm64-musl': 1.7.2
-      '@biomejs/cli-linux-x64': 1.7.2
-      '@biomejs/cli-linux-x64-musl': 1.7.2
-      '@biomejs/cli-win32-arm64': 1.7.2
-      '@biomejs/cli-win32-x64': 1.7.2
+      '@biomejs/cli-darwin-arm64': 1.7.3
+      '@biomejs/cli-darwin-x64': 1.7.3
+      '@biomejs/cli-linux-arm64': 1.7.3
+      '@biomejs/cli-linux-arm64-musl': 1.7.3
+      '@biomejs/cli-linux-x64': 1.7.3
+      '@biomejs/cli-linux-x64-musl': 1.7.3
+      '@biomejs/cli-win32-arm64': 1.7.3
+      '@biomejs/cli-win32-x64': 1.7.3
 
-  '@biomejs/cli-darwin-arm64@1.7.2':
+  '@biomejs/cli-darwin-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-darwin-x64@1.7.2':
+  '@biomejs/cli-darwin-x64@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@1.7.2':
+  '@biomejs/cli-linux-arm64-musl@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64@1.7.2':
+  '@biomejs/cli-linux-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@1.7.2':
+  '@biomejs/cli-linux-x64-musl@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-x64@1.7.2':
+  '@biomejs/cli-linux-x64@1.7.3':
     optional: true
 
-  '@biomejs/cli-win32-arm64@1.7.2':
+  '@biomejs/cli-win32-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-win32-x64@1.7.2':
+  '@biomejs/cli-win32-x64@1.7.3':
     optional: true
 
-  '@builder.io/qwik-city@1.4.1(@types/node@20.12.8)(rollup@4.17.2)':
+  '@builder.io/qwik-city@1.4.1(@types/node@20.12.10)(rollup@4.17.2)':
     dependencies:
       '@mdx-js/mdx': 2.3.0
       '@types/mdx': 2.0.13
@@ -6660,7 +6672,7 @@ snapshots:
       svgo: 3.2.0
       undici: 6.15.0
       vfile: 6.0.1
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
       vite-imagetools: 6.2.9(rollup@4.17.2)
       zod: 3.23.6
     transitivePeerDependencies:
@@ -6675,7 +6687,7 @@ snapshots:
       - terser
     optional: true
 
-  '@builder.io/qwik-city@1.5.2(@types/node@20.12.8)(rollup@4.17.2)':
+  '@builder.io/qwik-city@1.5.2(@types/node@20.12.10)(rollup@4.17.2)':
     dependencies:
       '@mdx-js/mdx': 3.0.1
       '@types/mdx': 2.0.13
@@ -6683,7 +6695,7 @@ snapshots:
       svgo: 3.2.0
       undici: 6.15.0
       vfile: 6.0.1
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
       vite-imagetools: 6.2.9(rollup@4.17.2)
       zod: 3.23.6
     transitivePeerDependencies:
@@ -6697,7 +6709,7 @@ snapshots:
       - supports-color
       - terser
 
-  '@builder.io/qwik-city@1.5.3(@types/node@20.12.8)(rollup@4.17.2)':
+  '@builder.io/qwik-city@1.5.3(@types/node@20.12.10)(rollup@4.17.2)':
     dependencies:
       '@mdx-js/mdx': 3.0.1
       '@types/mdx': 2.0.13
@@ -6705,7 +6717,7 @@ snapshots:
       svgo: 3.2.0
       undici: 6.15.0
       vfile: 6.0.1
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
       vite-imagetools: 6.2.9(rollup@4.17.2)
       zod: 3.23.6
     transitivePeerDependencies:
@@ -6719,11 +6731,11 @@ snapshots:
       - supports-color
       - terser
 
-  '@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0)':
+  '@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0)':
     dependencies:
       csstype: 3.1.3
       undici: 6.15.0
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6733,11 +6745,11 @@ snapshots:
       - sugarss
       - terser
 
-  '@builder.io/qwik@1.5.3(@types/node@20.12.8)(undici@6.15.0)':
+  '@builder.io/qwik@1.5.3(@types/node@20.12.10)(undici@6.15.0)':
     dependencies:
       csstype: 3.1.3
       undici: 6.15.0
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7210,23 +7222,23 @@ snapshots:
       '@types/react': 18.3.1
       react: 18.3.1
 
-  '@microsoft/api-extractor-model@7.28.13(@types/node@20.12.8)':
+  '@microsoft/api-extractor-model@7.28.13(@types/node@20.12.10)':
     dependencies:
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
-      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.8)
+      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.10)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.43.0(@types/node@20.12.8)':
+  '@microsoft/api-extractor@7.43.0(@types/node@20.12.10)':
     dependencies:
-      '@microsoft/api-extractor-model': 7.28.13(@types/node@20.12.8)
+      '@microsoft/api-extractor-model': 7.28.13(@types/node@20.12.10)
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
-      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.8)
+      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.10)
       '@rushstack/rig-package': 0.5.2
-      '@rushstack/terminal': 0.10.0(@types/node@20.12.8)
-      '@rushstack/ts-command-line': 4.19.1(@types/node@20.12.8)
+      '@rushstack/terminal': 0.10.0(@types/node@20.12.10)
+      '@rushstack/ts-command-line': 4.19.1(@types/node@20.12.10)
       lodash: 4.17.21
       minimatch: 3.0.8
       resolve: 1.22.8
@@ -7342,7 +7354,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.2':
     optional: true
 
-  '@rushstack/node-core-library@4.0.2(@types/node@20.12.8)':
+  '@rushstack/node-core-library@4.0.2(@types/node@20.12.10)':
     dependencies:
       fs-extra: 7.0.1
       import-lazy: 4.0.0
@@ -7351,23 +7363,23 @@ snapshots:
       semver: 7.5.4
       z-schema: 5.0.5
     optionalDependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
 
   '@rushstack/rig-package@0.5.2':
     dependencies:
       resolve: 1.22.8
       strip-json-comments: 3.1.1
 
-  '@rushstack/terminal@0.10.0(@types/node@20.12.8)':
+  '@rushstack/terminal@0.10.0(@types/node@20.12.10)':
     dependencies:
-      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.8)
+      '@rushstack/node-core-library': 4.0.2(@types/node@20.12.10)
       supports-color: 8.1.1
     optionalDependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
 
-  '@rushstack/ts-command-line@4.19.1(@types/node@20.12.8)':
+  '@rushstack/ts-command-line@4.19.1(@types/node@20.12.10)':
     dependencies:
-      '@rushstack/terminal': 0.10.0(@types/node@20.12.8)
+      '@rushstack/terminal': 0.10.0(@types/node@20.12.10)
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       string-argv: 0.3.2
@@ -7472,11 +7484,11 @@ snapshots:
     dependencies:
       '@storybook/global': 5.0.0
 
-  '@storybook/addon-interactions@8.0.10(vitest@1.6.0(@types/node@20.12.8))':
+  '@storybook/addon-interactions@8.0.10(vitest@1.6.0(@types/node@20.12.10))':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.0.10
-      '@storybook/test': 8.0.10(vitest@1.6.0(@types/node@20.12.8))
+      '@storybook/test': 8.0.10(vitest@1.6.0(@types/node@20.12.10))
       '@storybook/types': 8.0.10
       polished: 4.3.1
       ts-dedent: 2.2.0
@@ -7575,7 +7587,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/builder-vite@8.0.10(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))':
+  '@storybook/builder-vite@8.0.10(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))':
     dependencies:
       '@storybook/channels': 8.0.10
       '@storybook/client-logger': 8.0.10
@@ -7594,7 +7606,7 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.10
       ts-dedent: 2.2.0
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -7754,7 +7766,7 @@ snapshots:
       '@storybook/telemetry': 8.0.10
       '@storybook/types': 8.0.10
       '@types/detect-port': 1.3.5
-      '@types/node': 18.19.31
+      '@types/node': 18.19.32
       '@types/pretty-hrtime': 1.0.3
       '@types/semver': 7.5.8
       better-opn: 3.0.2
@@ -7922,14 +7934,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/test@8.0.10(vitest@1.6.0(@types/node@20.12.8))':
+  '@storybook/test@8.0.10(vitest@1.6.0(@types/node@20.12.10))':
     dependencies:
       '@storybook/client-logger': 8.0.10
       '@storybook/core-events': 8.0.10
       '@storybook/instrumenter': 8.0.10
       '@storybook/preview-api': 8.0.10
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.5(vitest@1.6.0(@types/node@20.12.8))
+      '@testing-library/jest-dom': 6.4.5(vitest@1.6.0(@types/node@20.12.10))
       '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
       '@vitest/expect': 1.3.1
       '@vitest/spy': 1.6.0
@@ -7957,51 +7969,51 @@ snapshots:
       '@types/express': 4.17.21
       file-system-cache: 2.3.0
 
-  '@swc/core-darwin-arm64@1.4.17':
+  '@swc/core-darwin-arm64@1.5.3':
     optional: true
 
-  '@swc/core-darwin-x64@1.4.17':
+  '@swc/core-darwin-x64@1.5.3':
     optional: true
 
-  '@swc/core-linux-arm-gnueabihf@1.4.17':
+  '@swc/core-linux-arm-gnueabihf@1.5.3':
     optional: true
 
-  '@swc/core-linux-arm64-gnu@1.4.17':
+  '@swc/core-linux-arm64-gnu@1.5.3':
     optional: true
 
-  '@swc/core-linux-arm64-musl@1.4.17':
+  '@swc/core-linux-arm64-musl@1.5.3':
     optional: true
 
-  '@swc/core-linux-x64-gnu@1.4.17':
+  '@swc/core-linux-x64-gnu@1.5.3':
     optional: true
 
-  '@swc/core-linux-x64-musl@1.4.17':
+  '@swc/core-linux-x64-musl@1.5.3':
     optional: true
 
-  '@swc/core-win32-arm64-msvc@1.4.17':
+  '@swc/core-win32-arm64-msvc@1.5.3':
     optional: true
 
-  '@swc/core-win32-ia32-msvc@1.4.17':
+  '@swc/core-win32-ia32-msvc@1.5.3':
     optional: true
 
-  '@swc/core-win32-x64-msvc@1.4.17':
+  '@swc/core-win32-x64-msvc@1.5.3':
     optional: true
 
-  '@swc/core@1.4.17':
+  '@swc/core@1.5.3':
     dependencies:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.6
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.4.17
-      '@swc/core-darwin-x64': 1.4.17
-      '@swc/core-linux-arm-gnueabihf': 1.4.17
-      '@swc/core-linux-arm64-gnu': 1.4.17
-      '@swc/core-linux-arm64-musl': 1.4.17
-      '@swc/core-linux-x64-gnu': 1.4.17
-      '@swc/core-linux-x64-musl': 1.4.17
-      '@swc/core-win32-arm64-msvc': 1.4.17
-      '@swc/core-win32-ia32-msvc': 1.4.17
-      '@swc/core-win32-x64-msvc': 1.4.17
+      '@swc/core-darwin-arm64': 1.5.3
+      '@swc/core-darwin-x64': 1.5.3
+      '@swc/core-linux-arm-gnueabihf': 1.5.3
+      '@swc/core-linux-arm64-gnu': 1.5.3
+      '@swc/core-linux-arm64-musl': 1.5.3
+      '@swc/core-linux-x64-gnu': 1.5.3
+      '@swc/core-linux-x64-musl': 1.5.3
+      '@swc/core-win32-arm64-msvc': 1.5.3
+      '@swc/core-win32-ia32-msvc': 1.5.3
+      '@swc/core-win32-x64-msvc': 1.5.3
 
   '@swc/counter@0.1.3': {}
 
@@ -8034,7 +8046,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.5(vitest@1.6.0(@types/node@20.12.8))':
+  '@testing-library/jest-dom@6.4.5(vitest@1.6.0(@types/node@20.12.10))':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.24.5
@@ -8045,7 +8057,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      vitest: 1.6.0(@types/node@20.12.8)
+      vitest: 1.6.0(@types/node@20.12.10)
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4)':
     dependencies:
@@ -8076,7 +8088,7 @@ snapshots:
 
   '@types/cross-spawn@6.0.6':
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
 
   '@types/debug@4.1.12':
     dependencies:
@@ -8144,9 +8156,13 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
 
-  '@types/node@18.19.31':
+  '@types/node@18.19.32':
+    dependencies:
+      undici-types: 5.26.5
+
+  '@types/node@20.12.10':
     dependencies:
       undici-types: 5.26.5
 
@@ -8196,9 +8212,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-basic-ssl@1.1.0(vite@5.2.11(@types/node@20.12.8))':
+  '@vitejs/plugin-basic-ssl@1.1.0(vite@5.2.11(@types/node@20.12.10))':
     dependencies:
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
 
   '@vitest/expect@1.3.1':
     dependencies:
@@ -9411,7 +9427,7 @@ snapshots:
 
   get-stream@8.0.1: {}
 
-  get-tsconfig@4.7.3:
+  get-tsconfig@4.7.4:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -11663,15 +11679,15 @@ snapshots:
 
   store2@2.14.3: {}
 
-  storybook-framework-qwik@0.4.0(@builder.io/qwik@1.5.2(@types/node@20.12.8)(undici@6.15.0))(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8)):
+  storybook-framework-qwik@0.4.0(@builder.io/qwik@1.5.2(@types/node@20.12.10)(undici@6.15.0))(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10)):
     dependencies:
-      '@builder.io/qwik': 1.5.2(@types/node@20.12.8)(undici@6.15.0)
-      '@storybook/builder-vite': 8.0.10(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
+      '@builder.io/qwik': 1.5.2(@types/node@20.12.10)(undici@6.15.0)
+      '@storybook/builder-vite': 8.0.10(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))
       '@storybook/docs-tools': 8.0.10
       magic-string: 0.30.10
       react-docgen-typescript: 2.2.2(typescript@5.4.5)
     optionalDependencies:
-      '@builder.io/qwik-city': 1.4.1(@types/node@20.12.8)(rollup@4.17.2)
+      '@builder.io/qwik-city': 1.4.1(@types/node@20.12.10)(rollup@4.17.2)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - '@types/node'
@@ -11936,7 +11952,7 @@ snapshots:
 
   tslib@2.6.2: {}
 
-  tsup@8.0.2(@microsoft/api-extractor@7.43.0(@types/node@20.12.8))(@swc/core@1.4.17)(postcss@8.4.38)(typescript@5.4.5):
+  tsup@8.0.2(@microsoft/api-extractor@7.43.0(@types/node@20.12.10))(@swc/core@1.5.3)(postcss@8.4.38)(typescript@5.4.5):
     dependencies:
       bundle-require: 4.1.0(esbuild@0.19.12)
       cac: 6.7.14
@@ -11953,8 +11969,8 @@ snapshots:
       sucrase: 3.35.0
       tree-kill: 1.2.2
     optionalDependencies:
-      '@microsoft/api-extractor': 7.43.0(@types/node@20.12.8)
-      '@swc/core': 1.4.17
+      '@microsoft/api-extractor': 7.43.0(@types/node@20.12.10)
+      '@swc/core': 1.5.3
       postcss: 8.4.38
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -11964,7 +11980,7 @@ snapshots:
   tsx@4.9.3:
     dependencies:
       esbuild: 0.20.2
-      get-tsconfig: 4.7.3
+      get-tsconfig: 4.7.4
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -12229,13 +12245,13 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-node@1.6.0(@types/node@20.12.8):
+  vite-node@1.6.0(@types/node@20.12.10):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -12246,7 +12262,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-checker@0.6.4(meow@9.0.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))(vue-tsc@1.8.27(typescript@5.4.5)):
+  vite-plugin-checker@0.6.4(meow@9.0.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10))(vue-tsc@1.8.27(typescript@5.4.5)):
     dependencies:
       '@babel/code-frame': 7.24.2
       ansi-escapes: 4.3.2
@@ -12259,7 +12275,7 @@ snapshots:
       semver: 7.6.0
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.11
@@ -12277,9 +12293,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-dts@3.9.1(@types/node@20.12.8)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8)):
+  vite-plugin-dts@3.9.1(@types/node@20.12.10)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10)):
     dependencies:
-      '@microsoft/api-extractor': 7.43.0(@types/node@20.12.8)
+      '@microsoft/api-extractor': 7.43.0(@types/node@20.12.10)
       '@rollup/pluginutils': 5.1.0(rollup@4.17.2)
       '@vue/language-core': 1.8.27(typescript@5.4.5)
       debug: 4.3.4
@@ -12288,33 +12304,33 @@ snapshots:
       typescript: 5.4.5
       vue-tsc: 1.8.27(typescript@5.4.5)
     optionalDependencies:
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8)):
+  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.10)):
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.3(typescript@5.4.5)
     optionalDependencies:
-      vite: 5.2.11(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.2.11(@types/node@20.12.8):
+  vite@5.2.11(@types/node@20.12.10):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.17.2
     optionalDependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
       fsevents: 2.3.3
 
-  vitest@1.6.0(@types/node@20.12.8):
+  vitest@1.6.0(@types/node@20.12.10):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -12333,11 +12349,11 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.2.11(@types/node@20.12.8)
-      vite-node: 1.6.0(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.10)
+      vite-node: 1.6.0(@types/node@20.12.10)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
     transitivePeerDependencies:
       - less
       - lightningcss

@@ -27,17 +27,19 @@
         "canvas": "~2.11.2"
     },
     "devDependencies": {
+        "@adaliszk/typescript": "^5.4.2",
         "@adaliszk/qwik": "^1.5.7",
         "@adaliszk/qwik-storybook": "^8.0.2",
         "@builder.io/qwik": "1.5.2",
         "@builder.io/qwik-city": "1.5.2",
         "@storybook/blocks": "^8.0.9",
         "@tailwindcss/typography": "^0.5.13",
-        "tailwindcss": "^3.4.3"
+        "tailwindcss": "^3.4.3",
+        "storybook-framework-qwik": "^0.4.0",
+        "storybook": "^8.0.10"
     },
     "files": ["dist", "*.md"],
     "types": "lib/bundle.d.ts",
     "qwik": "lib/bundle.js",
-    "module": "lib/bundle.js",
     "main": "lib/bundle.js"
 }

@@ -1,12 +1,12 @@
-import type { JSXOutput } from "@builder.io/qwik"
-import type { Result } from "@adaliszk/std"
-import { createErr, createOk } from "@adaliszk/std"
-import type { z, ZodSchema } from "zod"
+import type { JSXOutput } from "@builder.io/qwik";
+import type { Result } from "@adaliszk/std";
+import { createErr, createOk } from "@adaliszk/std";
+import type { z, ZodSchema } from "zod";
 
-import { MarkdownParser } from "./formats/Markdown.js"
+import { MarkdownParser } from "./formats/Markdown.js";
 
-import { resolve } from "node:path"
-import chokidar from "chokidar"
+import { resolve } from "node:path";
+import chokidar from "chokidar";
 
 export type CollectionDefinition<SCHEMA extends ZodSchema, NAME extends string = string> = {
     name: NAME;
@@ -40,8 +40,10 @@ export async function defineCollection<SCHEMA extends ZodSchema, NAME extends st
     const contentPattern = [`${contentDir}/*.mdx`, `${contentDir}/*.md`];
     const watcher = chokidar.watch(contentPattern);
 
-    const parseCollection = async (): Promise<Result<CollectionDefinition<SCHEMA, NAME>, Error>> => {
-        console.log("Parsing collection in", contentDir)
+    const parseCollection = async (): Promise<
+        Result<CollectionDefinition<SCHEMA, NAME>, Error>
+    > => {
+        console.log("Parsing collection in", contentDir);
         switch (definition.format) {
             case "markdown":
                 await new MarkdownParser<SCHEMA, NAME>().parse(definition, contentDir);
