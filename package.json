@@ -20,13 +20,15 @@
         "node": ">=20",
         "pnpm": ">=9.0"
     },
+    "workspaces": ["packages/*", "content", "design", "sites/*"],
     "trustedDependencies": ["sharp"],
     "devDependencies": {
-        "@adaliszk/biome": "^1.7.4",
+        "@adaliszk/biome": "^1.7.5",
         "@adaliszk/qwik": "^1.5.7",
         "@adaliszk/typescript": "^5.4.2",
         "@adaliszk/typescript-testing": "^5.4.3",
         "@adaliszk/web-compiler": "^5.2.10",
+        "@biomejs/biome": "^1.7.3",
         "@swc/core": "^1.5.3",
         "esbuild": "^0.20.2",
         "tsup": "^8.0.2",
@@ -35,6 +37,5 @@
         "vite": "^5.2.11",
         "vitest": "^1.6.0",
         "wrangler": "^3.53.1"
-    },
-    "workspaces": ["packages/*", "services/*", "content", "design", "sites/*"]
+    }
 }

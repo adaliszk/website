@@ -1,4 +1,4 @@
-name: Qodana
+name: Code Quality
 on:
   workflow_dispatch: {}
   pull_request: {}
@@ -18,7 +18,15 @@ jobs:
           node-version: 20
       - name: Configure PNPM
         uses: pnpm/action-setup@v4
-      - name: Code Analysis
+        with:
+          run_install: true
+      - name: Turbo Linting
+        run: pnpm lint
+      - name: Qodana Analysis
         uses: JetBrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+      - name: Super Analysis
+        uses: super-linter/super-linter@v6.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
