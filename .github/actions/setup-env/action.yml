@@ -7,11 +7,6 @@ runs:
   using: "composite"
   steps:
     -
-      name: Checkout Code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    -
       name: Configure Node Environment
       uses: actions/setup-node@v4
       with:
