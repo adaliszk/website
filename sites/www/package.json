@@ -7,8 +7,10 @@
     "license": "BSD 2-Clause",
     "type": "module",
     "scripts": {
-        "build": "turbo build-deps && qwik build",
-        "build.server": "vite build -c ssg.config.ts",
+        "build": "turbo build-deps && qwik build --verbose",
+        "build.server": "vite build -c vite.ssg.config.ts",
+        "build.client": "vite build",
+        "preview": "static-server ./dist",
         "format": "biome format --write . && biome lint --apply-unsafe ./src",
         "lint": "biome lint ./src",
         "dev": "vite --mode ssr"
@@ -17,6 +19,7 @@
     "dependencies": {
         "@builder.io/qwik": "1.5.2",
         "@builder.io/qwik-city": "1.5.2",
+        "darkreader": "^4.9.84",
         "undici": "^6.15.0"
     },
     "devDependencies": {

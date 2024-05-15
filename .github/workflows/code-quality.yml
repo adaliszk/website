@@ -5,7 +5,7 @@ on:
   push: {}
 
 jobs:
-  qodana:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -19,13 +19,30 @@ jobs:
       - name: Configure PNPM
         uses: pnpm/action-setup@v4
         with:
-          run_install: true
-      - name: Turbo Linting
-        run: pnpm lint
+          run_install: |
+            - recursive: true
+              args: [ --frozen-lockfile ]
+
+  qodana:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    steps:
       - name: Qodana Analysis
         uses: JetBrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+
+  turbo:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Turbo Linting
+        run: pnpm lint
+
+  super:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    steps:
       - name: Super Analysis
         uses: super-linter/super-linter@v6.5.0
         env:

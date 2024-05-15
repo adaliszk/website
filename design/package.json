@@ -23,8 +23,7 @@
         "tailwindcss": "^3.4"
     },
     "dependencies": {
-        "tailwind-merge": "~2.3.0",
-        "canvas": "~2.11.2"
+        "tailwind-merge": "~2.3.0"
     },
     "devDependencies": {
         "@adaliszk/typescript": "^5.4.2",

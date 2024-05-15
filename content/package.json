@@ -1,14 +1,15 @@
 {
     "private": true,
-    "version": "0.3.0",
+    "version": "0.5.0",
     "name": "@adaliszk.io/content",
     "description": "The content for the adaliszk.io sites in MDX and JSON format.",
-    "main": "./prelude.ts",
+    "types": "./dist/vite.d.ts",
+    "main": "./dist/vite.js",
     "type": "module",
     "scripts": {
         "format": "biome format --write .",
-        "lint": "biome lint ./schemas.ts ./prelude.ts",
-        "build": "echo 'Cannot pre-build this package, skipping...' && exit 0"
+        "lint": "biome lint ./*.ts",
+        "build": "tsup vite.ts --clean --format esm --dts --out-dir ./dist"
     },
     "dependencies": {
         "@adaliszk/qwik-static-content": "workspace:*"
