@@ -1,6 +1,5 @@
 # Docs: https://www.jetbrains.com/help/qodana/qodana-yaml.html
 version: "1.0"
-bootstrap: .github/scripts/bootstrap.sh
 linter: jetbrains/qodana-js:latest
 profile:
   name: qodana.starter

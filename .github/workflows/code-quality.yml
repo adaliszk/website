@@ -33,7 +33,6 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      
 
   qodana:
     needs: [setup]
@@ -51,11 +50,11 @@ jobs:
       - name: Turbo Linting
         run: pnpm lint
 
-  super:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Super Analysis
-        uses: super-linter/super-linter@v6.5.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#  super:
+#    needs: [setup]
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Super Analysis
+#        uses: super-linter/super-linter@v6.5.0
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

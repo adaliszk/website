@@ -6,16 +6,16 @@
     "repository": "github:adaliszk/adaliszk.io",
     "type": "module",
     "scripts": {
-        "format": "biome format --write .",
-        "lint": "turbo lint",
-        "build": "turbo build",
+        "format": "pnpm exec biome format --write .",
+        "lint": "pnpm exec turbo lint",
+        "build": "pnpm exec turbo build",
         "pkg:qsc": "pnpm --filter @adaliszk/qwik-static-content run",
         "pkg:std": "pnpm --filter @adaliszk/std run",
         "content": "pnpm --filter @adaliszk.io/content run",
         "design": "pnpm --filter @adaliszk.io/design run",
         "www": "pnpm --filter @adaliszk.io/www run"
     },
-    "packageManager": "pnpm@9.1.0+sha256.22e36fba7f4880ecf749a5ca128b8435da085ecd49575e7fb9e64d6bf4fad394",
+    "packageManager": "pnpm@9.1.1",
     "engines": {
         "node": ">=20",
         "pnpm": ">=9.0"
@@ -29,13 +29,13 @@
         "@adaliszk/typescript-testing": "^5.4.3",
         "@adaliszk/web-compiler": "^5.2.10",
         "@biomejs/biome": "^1.7.3",
-        "@swc/core": "^1.5.3",
+        "@swc/core": "^1.5.7",
         "esbuild": "^0.20.2",
         "tsup": "^8.0.2",
         "turbo": "^1.13.3",
         "typescript": "^5.4.5",
         "vite": "^5.2.11",
         "vitest": "^1.6.0",
-        "wrangler": "^3.53.1"
+        "wrangler": "^3.56.0"
     }
 }
