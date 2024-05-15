@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Configure Node Environment
@@ -38,6 +38,10 @@ jobs:
     needs: [setup]
     runs-on: ubuntu-latest
     steps:
+      - name: Configure PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
       - name: Qodana Analysis
         uses: JetBrains/qodana-action@v2024.1
         env:
@@ -47,6 +51,10 @@ jobs:
     needs: [setup]
     runs-on: ubuntu-latest
     steps:
+      - name: Configure PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
       - name: Turbo Linting
         run: pnpm lint
 

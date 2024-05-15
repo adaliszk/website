@@ -1,7 +1,10 @@
+#
+# QODANA STATIC CODE ANALYSIS
 # Docs: https://www.jetbrains.com/help/qodana/qodana-yaml.html
+#
 version: "1.0"
-linter: jetbrains/qodana-js:latest
 profile:
   name: qodana.starter
+linter: jetbrains/qodana-js:latest
 include:
   - name: DuplicatedCode
