@@ -8,18 +8,24 @@ jobs:
 
   qodana:
     runs-on: ubuntu-latest
-    uses: ./.github/workflows/setup-environment.yml
     steps:
-      - name: Qodana Analysis
+      -
+        name: Environment Setup
+        uses: ./.github/actions/setup-env
+      -
+        name: Qodana Analysis
         uses: JetBrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
 
   turbo:
     runs-on: ubuntu-latest
-    uses: ./.github/workflows/setup-environment.yml
     steps:
-      - name: Turbo Linting
+      -
+        name: Environment Setup
+        uses: ./.github/actions/setup-env
+      -
+        name: Turbo Linting
         run: pnpm lint
 
 #  super:
