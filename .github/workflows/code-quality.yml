@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Configure PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
       - name: Retrieve PNPM store directory
         shell: bash
         run: |
@@ -27,12 +31,9 @@ jobs:
           key: "${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}"
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-      - name: Configure PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: |
-            - recursive: true
-              args: [ --frozen-lockfile ]
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
 
   qodana:
     needs: [setup]
