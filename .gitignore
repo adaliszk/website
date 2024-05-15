@@ -10,6 +10,7 @@
 /target
 /**/.turbo
 /**/dist
+/**/server
 /**/lib
 
 # Node
