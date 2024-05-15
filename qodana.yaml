@@ -1,6 +1,6 @@
 # Docs: https://www.jetbrains.com/help/qodana/qodana-yaml.html
 version: "1.0"
-bootstrap: pnpm setup && pnpm i -g pnpm && pnpm install
+bootstrap: pnpm install
 linter: jetbrains/qodana-js:latest
 profile:
   name: qodana.starter
