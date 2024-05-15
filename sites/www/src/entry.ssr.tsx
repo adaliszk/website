@@ -4,11 +4,10 @@
  * SSR entry point, in all cases the application is rendered outside the browser, this
  * entry point will be the common one.
  */
-import { renderToStream, type RenderToStreamOptions } from "@builder.io/qwik/server";
+import { type RenderToStreamOptions, renderToStream } from "@builder.io/qwik/server";
 import { manifest } from "@qwik-client-manifest";
 import Root from "./root.jsx";
 
-import "@adaliszk.io/content/prelude";
 import "@adaliszk/std/prelude";
 
 export default function (opts: RenderToStreamOptions) {

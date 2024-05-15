@@ -1,5 +1,6 @@
 import { defineConfig } from "./src/bundle";
 
+// noinspection JSUnusedGlobalSymbols
 export default defineConfig({
-    content: ["./src/**/*.{html,css,tsx,ts}", "./src/*.{html,css,tsx,ts}"],
+    content: ["./lib/**/*.js", "./src/**/*.{html,css,tsx,ts}", "./src/*.{html,css,tsx,ts}"],
 });

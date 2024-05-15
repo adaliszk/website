@@ -1,10 +1,10 @@
 {
     "extends": "@adaliszk/qwik",
     "include": ["vite.*", "src"],
+    "exclude": ["src/**/*.stories.tsx"],
     "compilerOptions": {
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "allowImportingTsExtensions": true,
+        "module": "ES2020",
+        "moduleResolution": "Node",
         "jsxImportSource": "@builder.io/qwik",
         "jsx": "react-jsx",
         "baseUrl": "src",

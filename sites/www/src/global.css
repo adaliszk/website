@@ -6,44 +6,84 @@
   @font-face {
     font-family: "Inconsolata";
     src: url("/assets/fonts/inconsolata.woff2") format("woff2"), url("/assets/fonts/inconsolata.woff") format("woff");
-    font-weight: normal;
-    font-display: swap;
-    font-style: normal;
+    font-display: block;
   }
   @font-face {
     font-family: "Oswald";
     src: url("/assets/fonts/oswald.woff2") format("woff2"), url("/assets/fonts/oswald.woff") format("woff");
-    font-weight: normal;
-    font-display: swap;
-    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: "Exo";
+    src: url("/assets/fonts/exo.woff2") format("woff2"), url("/assets/fonts/exo.woff") format("woff");
+    font-display: block;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("/assets/fonts/raleway.woff2") format("woff2"), url("/assets/fonts/raleway.woff") format("woff");
+    font-display: block;
   }
 }
 
-html, body {
-  height: 100%;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
+:root {
+  --scrollbar-foreground: #add037;
+  --scrollbar-background: #242424;
 }
 
-html[data-theme="dark"], html[data-theme="dark"] .docs-story {
+html, body {
+  @apply min-h-screen h-full p-0 m-0 font-thin;
+  scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-foreground);
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply text-light bg-dark;
+  }
+}
+
+body[data-theme="dark"] {
   @apply text-light bg-dark;
 }
 
-html[data-theme="light"], html[data-theme="light"] .docs-story {
+@media (prefers-color-scheme: light) {
+  body {
+    @apply text-dark bg-light;
+  }
+}
+
+body[data-theme="light"] {
   @apply text-dark bg-light;
 }
-
-body, td, th {
-  font-family: Inconsolata, Helvetica, sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald, Helvetica, sans-serif;
-  font-weight: bold;
+.markdown-content {
+  & h2, & h2, & h3, & h4, & h5, & h6 {
+    @apply mt-4 mb-2 font-normal underline underline-offset-2;
+  }
+  & p {
+    @apply my-3;
+  }
+  & ul {
+    @apply list-disc ml-2;
+    & li {
+      @apply ml-4;
+    }
+  }
+  & table {
+    @apply w-full;
+    & tr {
+      @apply border-b border-b-glass-10;
+    }
+    & td, & th {
+      @apply p-2;
+    }
+  }
 }

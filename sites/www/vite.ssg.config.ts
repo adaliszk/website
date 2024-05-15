@@ -1,8 +1,8 @@
 import { staticAdapter } from "@builder.io/qwik-city/adapters/static/vite";
 import { extendConfig } from "@builder.io/qwik-city/vite";
-// @ts-expect-error - This is a valid import but TS doesn't see the type
 import baseConfig from "./vite.config";
 
+// noinspection JSUnusedGlobalSymbols
 export default extendConfig(baseConfig, () => {
     return {
         build: {

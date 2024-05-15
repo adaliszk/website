@@ -2,14 +2,10 @@ import { Slot, component$ } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
 
-import {
-    NavigationLink,
-    NavigationMenu,
-    SiteContent,
-    SiteFooter,
-    SiteHeader,
-} from "@adaliszk.io/design";
+import { NavigationLink, NavigationMenu, SiteFooter, SiteHeader } from "@adaliszk.io/design";
+import { useMenuContext } from "contexts";
 
+// noinspection JSUnusedGlobalSymbols
 export const onGet: RequestHandler = async ({ cacheControl }) => {
     // Control caching for this request for best performance and to reduce hosting costs:
     // https://qwik.dev/docs/caching
@@ -23,24 +19,29 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
     const { url } = useLocation();
+    const menu = useMenuContext();
     return (
         <>
-            <SiteHeader>
-                <NavigationMenu>
-                    <NavigationLink label={"Updates"} href={"/"} isActive={true} />
-                    <NavigationLink label={"Projects"} href={"/projects"} />
-                    <NavigationLink label={"Snippets"} href={"/snippets"} />
-                    <NavigationLink label={"Tools"} href={"/tools"} />
-                    <NavigationLink label={"Biography"} href={"/biography"} />
-                    <NavigationLink label={"Blog"} href={"/blog"} />
+            <SiteHeader class={"relative z-20"}>
+                <NavigationMenu activeLabel={menu.at(0)?.label ?? "Updates"}>
+                    {menu.map((item) => (
+                        <NavigationLink
+                            label={item.label}
+                            href={item.href}
+                            isActive={url.href.match(item.activePattern) !== null}
+                            key={item.label.toLowerCase()}
+                        />
+                    ))}
                 </NavigationMenu>
             </SiteHeader>
-
-            <SiteContent>
-                <Slot />
-            </SiteContent>
-
-            <SiteFooter />
+            <div class={"w-full h-full  overflow-y-scroll relative z-0"}>
+                <section
+                    class={
+                        "w-full max-w-screen-lg h-full mx-auto flex-grow grid grid-cols-12 auto-rows-max gap-3"
+                    }>
+                    <Slot />
+                </section>
+            </div>
         </>
     );
 });

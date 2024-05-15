@@ -1,11 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import {
-    NavigationLink,
-    NavigationMenu,
-    SiteContent,
-    SiteFooter,
-    SiteHeader,
-} from "../lib/bundle.js";
+import { NavigationLink, NavigationMenu, SiteContent, SiteFooter, SiteHeader } from "./components";
 
 export default component$(() => {
     return (

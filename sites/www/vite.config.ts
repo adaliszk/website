@@ -1,10 +1,11 @@
+import { qwikContent } from "@adaliszk.io/content";
 import { webConfig } from "@adaliszk/web-compiler";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 
 export default webConfig({
     https: false,
-    plugins: [qwikCity(), qwikVite()],
+    plugins: [qwikContent(), qwikCity(), qwikVite()],
     publicDir: "../../resources",
     server: {
         hmr: { protocol: "ws" },

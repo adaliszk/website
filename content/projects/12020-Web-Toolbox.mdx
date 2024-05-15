@@ -1,0 +1,73 @@
+---
+slug: web-toolbox
+title: Web Toolbox
+description: Monorepo for my Node.js tooling, configs, and abstraction packages and tools.
+stage: in-development
+year: 12020
+sourceLink: https://github.com/adaliszk/web-toolbox
+tags:
+  - Node
+  - TypeScript
+  - NPM
+#  - JSR
+---
+
+
+Working with the Node ecosystem, building many projects and packages, can become pretty heavy to maintain as each
+individual project depends on the same set of dependencies but on different versions. While many automation tools does
+try to combat this, it is very common to abstract away frequently used package groups into a centralised configuration
+and preset library.
+
+This repository contains my frequently used abstractions and configurations alongside of a few tools and framework
+extensions that aims to simplify the needed boilerplate or provides common use-case implementations.
+
+### Prerequisites
+
+- [`node.js >= 20.x`](https://nodejs.org/en/download) as the environment for development
+- [`pnpm >= 9.0`](https://pnpm.io/installation) as the package manager
+- [`changeset >= 2.27`](https://github.com/changesets/changesets) as versioning and publishing tool
+- [`turbo >= 1.9`](https://turbo.build/repo/docs) as the monorepo orchestrator
+- [`biome >= 1.7`](https://biomejs.dev/) as the code formatter and linter
+- [`rust >= 1.72`](https://www.rust-lang.org/tools/install) for optimized tools
+
+### Folder structure
+
+- **/configs**: Static/Semi-Static configuration files in json, yaml, or commonjs
+- **/packages**: Meta packages to work with frameworks and tools
+- **/templates**: Command-Line interfaces and templates for quick bootstrapping
+- **/utils**: Utility packages to simplify code-bases
+
+## Packages
+
+| Name                               | Type            |
+|:-----------------------------------|:----------------|
+| `@adaliszk/biome`                  | Config          |
+| `@adaliszk/dprint`                 | Config          |
+| `@adaliszk/create-qwik-admin`      | Template        |
+| `@adaliszk/create-qwik-library`    | Template        |
+| `@adaliszk/create-qwik-pwa`        | Template        |
+| `@adaliszk/create-qwik-website`    | Template        |
+| `@adaliszk/create-package`         | Template        |
+| `@adaliszk/create-react-app`       | Template        |
+| `@adaliszk/create-react-library`   | Template        |
+| `@adaliszk/create-streamlit-admin` | Template        |
+| `@adaliszk/create-streamlit-page`  | Template        |
+| `@adaliszk/devtools`               | CLI             |
+| `@adaliszk/devtools-template`      | Config          |
+| `@adaliszk/qwik`                   | Config + Facade |
+| `@adaliszk/qwik-storybook`         | Config + Bundle |
+| `@adaliszk/react`                  | Config + Facade |
+| `@adaliszk/react-storybook`        | Config + Bundle |
+| `@adaliszk/std`                    | Utility         |
+| `@adaliszk/streamlit`              | Config + Facade |
+| `@adaliszk/streamlit-storybook`    | Config + Bundle |
+| `@adaliszk/typescript`             | Config          |
+| `@adaliszk/typescript-testing`     | Bundle          |
+| `@adaliszk/web-compiler`           | Config + Bundle |
+| `@adaliszk/web-content-manager`    | Plugin + Bundle |
+| `@adaliszk/web-testing`            | Facade          |
+
+## Contributions
+
+While this is my personal toolbox, you are free to use it and contribute to it!<br />
+Bug reports are especially welcomed!

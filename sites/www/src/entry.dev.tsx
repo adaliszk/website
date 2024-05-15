@@ -9,10 +9,9 @@
  * - More code is transferred to the browser than in SSR mode.
  * - Optimizer/Serialization/Deserialization code is not exercised!
  */
-import { render, type RenderOptions } from "@builder.io/qwik";
+import { type RenderOptions, render } from "@builder.io/qwik";
 import Root from "./root.jsx";
 
-import "@adaliszk.io/content/prelude";
 import "@adaliszk/std/prelude";
 
 export default function (opts: RenderOptions) {

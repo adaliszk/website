@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
+import type { Config } from "tailwindcss";
 
 export function defineConfig(config?: Partial<Config>): Config {
     return {
@@ -8,20 +8,40 @@ export function defineConfig(config?: Partial<Config>): Config {
         plugins: [typography],
         theme: {
             colors: {
+                transparent: "transparent",
+                current: "currentColor",
                 white: "#ffffff",
                 light: "#e0e0e0",
                 black: "#000000",
                 dark: "#1e1e1e",
                 primary: "#add037",
                 secondary: "#3056a9",
-                accent: "#819a24",
-                neutral: "#101010",
+                accent: "#9cbd2c",
+                neutral: "#242424",
+                glass: {
+                    10: "rgba(224, 224, 224, 0.1)",
+                    20: "rgba(224, 224, 224, 0.2)",
+                    30: "rgba(224, 224, 224, 0.3)",
+                    40: "rgba(224, 224, 224, 0.4)",
+                    50: "rgba(224, 224, 224, 0.5)",
+                },
+                pane: {
+                    10: "rgba(54, 54, 54, 0.1)",
+                    20: "rgba(54, 54, 54, 0.2)",
+                    30: "rgba(54, 54, 54, 0.3)",
+                    40: "rgba(54, 54, 54, 0.4)",
+                    50: "rgba(54, 54, 54, 0.4)",
+                },
             },
             fontFamily: {
                 display: ["Oswald", "Helvetica", "sans-serif"],
-                body: ["Inconsolata", "Helvetica", "sans-serif"],
-                sans: ["Inconsolata", "sans-serif"],
-                serif: ["Inconsolata", "serif"],
+                body: ["Exo", "Helvetica", "sans-serif"],
+                oswald: ["Oswald", "Helvetica", "sans-serif"],
+                inconsolata: ["Inconsolata", "Helvetica", "sans-serif"],
+                exo: ["Exo", "Helvetica", "sans-serif"],
+                raleway: ["Raleway", "Helvetica", "sans-serif"],
+                sans: ["Exo", "sans-serif"],
+                serif: ["Raleway", "serif"],
             },
         },
         ...(config ?? {}),

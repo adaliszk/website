@@ -6,7 +6,7 @@
  * - Finding a match on an enum or literal type
  */
 
-import { createOk, type Result } from "./result.js";
+import { type Result, createErr, createOk } from "./result";
 
 type ParentType<T> = T extends infer U ? U : never;
 type MatchFn<DATA extends object | string, RESULT = ParentType<DATA[keyof DATA]>> = (
@@ -19,14 +19,13 @@ type MatchCaseHandlers<
     VALUES extends string | number | symbol,
 > =
     | ({ [MATCHER in VALUES]: MatchFn<DATA, RESULT> } & {
-          _: MatchFn<DATA, RESULT>;
-      }) // When all case handlers and the default handler are present
-    | ({ [MATCHER in VALUES]: MatchFn<DATA, RESULT> } & {
           _?: MatchFn<DATA, RESULT>;
-      }) // When not all case handlers are present
+      }) // When all case handlers are present, the default is optional
     | ({ [MATCHER in VALUES]?: MatchFn<DATA, RESULT> } & {
           _: MatchFn<DATA, RESULT>;
-      }); // When all case handlers are present, but the default handler is missing
+      }); // When not all case handlers defined, the default is required
+
+const DEBUG_MODE = process.env.DEBUG_MATCH === "true";
 
 /**
  * Internal function to handle the match case handlers
@@ -38,12 +37,14 @@ function _handleMatch<RESULT, SOURCE extends object | string>(
 ) {
     let defaultWasInvoked = false;
     try {
-        const handlerResult = handler?.(source);
-        if (handler && handlerResult) {
+        if (handler) {
+            const handlerResult = handler?.(source);
+            DEBUG_MODE && console.debug("::_handleMatch() ->", { handlerResult });
             return createOk(handlerResult);
         }
         const defaultResult = defaultHandler?.(source);
         if (defaultResult) {
+            DEBUG_MODE && console.debug("::_handleMatch() ->", { defaultResult });
             defaultWasInvoked = true;
             return createOk(defaultResult);
         }
@@ -52,7 +53,9 @@ function _handleMatch<RESULT, SOURCE extends object | string>(
             defaultHandler(source);
         }
     }
-    return undefined;
+
+    DEBUG_MODE && console.debug("::_handleMatch() -> Error!");
+    return createErr(new TypeError("Could not match with a handler or the default!"));
 }
 
 /**
@@ -69,11 +72,11 @@ export function matchByKey<
     SOURCE extends Record<string, string | number | boolean>,
     PROPERTY extends keyof SOURCE,
     CASES extends MatchCaseHandlers<RESULT, SOURCE, SOURCE[PROPERTY] & string>,
->(source: SOURCE, property: PROPERTY, cases: CASES): Result<RESULT | undefined, TypeError> {
+>(source: SOURCE, property: PROPERTY, cases: CASES): Result<RESULT | unknown, TypeError> {
     const scenarioValue = source[property] as SOURCE[PROPERTY] & string;
     const handler = cases[scenarioValue];
-    const result = _handleMatch(source, handler, cases._);
-    return result ?? createOk(undefined);
+    DEBUG_MODE && console.debug("::matchByKey()", { scenarioValue, cases, handler });
+    return _handleMatch(source, handler, cases._);
 }
 
 /**
@@ -89,8 +92,8 @@ export function matchByValue<
     RESULT,
     SOURCE extends string,
     CASES extends MatchCaseHandlers<RESULT, SOURCE, SOURCE>,
->(source: SOURCE, cases: CASES): Result<RESULT | undefined, TypeError> {
-    const handler = cases[source];
-    const result = _handleMatch(source, handler, cases._);
-    return result ?? createOk(undefined);
+>(scenarioValue: SOURCE, cases: CASES): Result<RESULT | unknown, TypeError> {
+    const handler = cases[scenarioValue];
+    DEBUG_MODE && console.debug("::matchByValue()", { scenarioValue, cases, handler });
+    return _handleMatch(scenarioValue, handler, cases._);
 }

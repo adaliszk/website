@@ -1,6 +1,7 @@
-export * from "./layout/SiteHeader.tsx";
-export * from "./layout/SiteContent.tsx";
-export * from "./layout/SiteFooter.tsx";
+export * from "./layout/SiteHeader";
+export * from "./layout/SiteContent";
+export * from "./layout/SiteSidebar";
+export * from "./layout/SiteFooter";
 
-export * from "./navigation/NavigationMenu.tsx";
-export * from "./navigation/NavigationLink.tsx";
+export * from "./navigation/NavigationMenu";
+export * from "./navigation/NavigationLink";

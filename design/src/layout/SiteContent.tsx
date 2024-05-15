@@ -1,4 +1,4 @@
-import { component$, Slot } from "@builder.io/qwik";
+import { Slot, component$ } from "@builder.io/qwik";
 import { twMerge } from "tailwind-merge";
 
 export type SiteContentProps = {
@@ -7,11 +7,7 @@ export type SiteContentProps = {
 
 export const SiteContent = component$<SiteContentProps>((props) => {
     return (
-        <main
-            class={twMerge(
-                "w-full max-w-screen-lg h-full mx-auto px-2 py-6 flex-grow",
-                props.class,
-            )}>
+        <main class={twMerge("w-full h-full mx-auto px-2 py-6 flex-grow", props.class)}>
             <Slot />
         </main>
     );

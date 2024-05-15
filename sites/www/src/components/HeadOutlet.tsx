@@ -10,7 +10,7 @@ export const HeadOutlet = component$(() => {
 
     return (
         <>
-            <title>{head.title}</title>
+            <title>{`${head.title} @adaliszk`}</title>
 
             <link rel="canonical" href={loc.url.href} />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />

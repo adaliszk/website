@@ -19,7 +19,7 @@ export default webConfig({
         },
         rollupOptions: {
             // externalize deps that shouldn't be bundled into the library
-            external: [/^node:.*/, ...excludeAll(pkg.dependencies)],
+            // external: [/^node:.*/, ...excludeAll(pkg.dependencies)],
         },
     },
 });

@@ -1,7 +1,10 @@
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
-import { component$ } from "@builder.io/qwik";
+import { disable as disableDarkReader, isEnabled as isDarkReaderEnabled } from "darkreader";
 
-import { HeadOutlet } from "./components/HeadOutlet.jsx";
+import { HeadOutlet } from "components";
+import { useFeatureFlagContextProvider, useMenuContextProvider } from "contexts";
+
 import "./global.css";
 
 /**
@@ -9,13 +12,23 @@ import "./global.css";
  * immediately followed by the document's <head> and <body>.
  */
 export default component$(() => {
+    useFeatureFlagContextProvider();
+    useMenuContextProvider();
+
+    useVisibleTask$(() => {
+        disableDarkReader();
+        console.log("Root::useVisibleTask$()", {
+            isDarkReaderEnabled: isDarkReaderEnabled(),
+        });
+    });
+
     return (
         <QwikCityProvider>
             <head>
                 <meta charSet="utf-8" />
                 <HeadOutlet />
             </head>
-            <body lang="en" class={"flex flex-column h-full"}>
+            <body data-theme={"dark"} class={"flex flex-col-reverse md:flex-col h-full font-exo"}>
                 <RouterOutlet />
                 <ServiceWorkerRegister />
             </body>
