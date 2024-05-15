@@ -15,10 +15,10 @@
         "design": "pnpm --filter @adaliszk.io/design run",
         "www": "pnpm --filter @adaliszk.io/www run"
     },
-    "packageManager": "pnpm@9.1.1",
+    "packageManager": "pnpm@9.1.1+sha256.9551e803dcb7a1839fdf5416153a844060c7bce013218ce823410532504ac10b",
     "engines": {
         "node": ">=20",
-        "pnpm": ">=9.0"
+        "pnpm": ">=9.1"
     },
     "workspaces": ["packages/*", "content", "design", "sites/*"],
     "trustedDependencies": ["sharp"],
