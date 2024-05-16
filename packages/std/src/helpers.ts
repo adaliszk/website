@@ -4,10 +4,14 @@ type NonFalsy<T> = T extends false | 0 | "" | null | undefined | 0n ? never : T;
 
 declare global {
     interface Array<T> {
-        choose(): T;
-        pick(amount: number): T[];
-        sortBy<T>(this: Array<T>, key: keyof T): T[];
-        filterOk<T>(this: Array<T>): Array<NonFalsy<T>>;
+        choose(this: T[]): T;
+        pick(this: T[], amount: number): T[];
+        sortBy<T>(this: T[], key: keyof T): T[];
+        filterOk<T>(this: T[]): NonFalsy<T>[];
+    }
+    interface String {
+        toCapitalize(this: string): Capitalize<string>;
+        toCapitalizeWords(this: string): string;
     }
 }
 
@@ -15,14 +19,14 @@ declare global {
  * Choose a random element from the array.
  * Inspired by Python's random.choice.
  */
-Array.prototype.choose = function <T>(this: Array<T>): T {
+Array.prototype.choose = function choose<T>(this: T[]) {
     return this[Math.floor(Math.random() * this.length)];
 };
 
 /**
  * Pick a random amount of elements from the array.
  */
-Array.prototype.pick = function <T>(this: Array<T>, amount: number): T[] {
+Array.prototype.pick = function pick<T>(this: T[], amount: number) {
     const pickAmount = Math.min(amount, this.length);
     const available = new Set<number>([...this.keys()]);
     const picked = new Set<T>();
@@ -39,7 +43,7 @@ Array.prototype.pick = function <T>(this: Array<T>, amount: number): T[] {
 /**
  * Sort the array by the specified key.
  */
-Array.prototype.sortBy = function <T>(this: Array<T>, key: keyof T): T[] {
+Array.prototype.sortBy = function sortBy<T>(this: T[], key: keyof T) {
     return this.toSorted((a, b) => {
         const aValue = a[key];
         const bValue = b[key];
@@ -53,6 +57,22 @@ Array.prototype.sortBy = function <T>(this: Array<T>, key: keyof T): T[] {
 /**
  * Filter out all the elements that are not Ok.
  */
-Array.prototype.filterOk = function filterOk<T>(this: Array<T>): Array<NonFalsy<T>> {
+Array.prototype.filterOk = function filterOk<T>(this: T[]) {
     return this.filter(Boolean);
+};
+
+/**
+ * Capitalize the first letter of the string
+ */
+String.prototype.toCapitalize = function toCapitalize(this) {
+    return (this.charAt(0).toUpperCase() + this.slice(1)) as Capitalize<typeof this>;
+};
+
+/**
+ * Capitalize all words within the string
+ */
+String.prototype.toCapitalizeWords = function toCapitalizeWords(this) {
+    return this.split(" ")
+        .map((str) => str.toCapitalize())
+        .join(" ");
 };

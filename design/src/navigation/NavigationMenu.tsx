@@ -6,7 +6,7 @@ import {
     calculateLabelWidth,
     setNavigationContext,
     updateHighlight,
-} from "./NavigationContext";
+} from "./_NavigationContext";
 
 export type NavigationMenuProps = PropsOf<"nav"> & {
     activeLabel?: string;
@@ -34,7 +34,7 @@ export const NavigationMenu = component$<NavigationMenuProps>(
                     class={
                         context.highlightWidth > 0 &&
                         twMerge(
-                            "absolute z-20 top-0 bottom-0 transition-transform transition-width duration-500 ease-in-out",
+                            "absolute z-20 top-0 bottom-0 transition-horizontal duration-500 ease-in-out",
                             "rounded-md bg-accent mix-blend-overlay select-none",
                         )
                     }

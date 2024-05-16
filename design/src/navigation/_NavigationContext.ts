@@ -28,10 +28,10 @@ export function calculateLabelWidth(label: string) {
     return narrowCharacters * 6.5 + wideCharacters * 8 + 32;
 }
 
-export const NavigationContext = createContextId<NavigationContextSchema>(
+export const _NavigationContext = createContextId<NavigationContextSchema>(
     "io.adaliszk.ui.navigation",
 );
 
-export const useNavigationContext = () => useContext(NavigationContext);
+export const useNavigationContext = () => useContext(_NavigationContext);
 export const setNavigationContext = (context: NavigationContextSchema) =>
-    useContextProvider(NavigationContext, context);
+    useContextProvider(_NavigationContext, context);

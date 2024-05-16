@@ -1,10 +1,9 @@
 {
     "extends": "@adaliszk/qwik",
-    "include": ["*.config.ts", "src/**/*.tsx", "src/**/*"],
+    "include": ["*.config.ts", "src/**/*.tsx", "src/*.d.ts", "src/**/*"],
     "compilerOptions": {
         "module": "ES2020",
         "moduleResolution": "Node",
-        "jsxImportSource": "@builder.io/qwik",
         "baseUrl": "src",
         "outDir": "dist",
         "paths": {

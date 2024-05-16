@@ -9,9 +9,18 @@
     "scripts": {
         "format": "biome format --write .",
         "lint": "biome lint ./*.ts",
-        "build": "tsup vite.ts --clean --format esm --dts --out-dir ./dist"
+        "build": "tsup vite.ts --clean --format esm --dts --external lightningcss --out-dir ./dist"
     },
     "dependencies": {
         "@adaliszk/qwik-static-content": "workspace:*"
+    },
+    "exports": {
+        "./projects": {
+            "import": "./projects/index.ts"
+        },
+        ".": {
+            "types": "./dist/vite.d.ts",
+            "import": "./dist/vite.js"
+        }
     }
 }

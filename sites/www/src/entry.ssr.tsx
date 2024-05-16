@@ -10,6 +10,7 @@ import Root from "./root.jsx";
 
 import "@adaliszk/std/prelude";
 
+// noinspection JSUnusedGlobalSymbols
 export default function (opts: RenderToStreamOptions) {
     return renderToStream(<Root />, {
         manifest,

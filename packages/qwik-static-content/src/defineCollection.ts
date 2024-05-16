@@ -54,10 +54,12 @@ export async function defineCollection<SCHEMA extends ZodSchema, NAME extends st
         }
     };
 
-    watcher.on("change", async () => {
-        await parseCollection();
-        import.meta.hot?.invalidate();
-    });
+    if (import.meta.hot !== undefined) {
+        watcher.on("change", async () => {
+            await parseCollection();
+            import.meta.hot?.invalidate();
+        });
+    }
 
     return await parseCollection();
 }

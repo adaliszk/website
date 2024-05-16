@@ -28,7 +28,7 @@ export default component$(() => {
                 <meta charSet="utf-8" />
                 <HeadOutlet />
             </head>
-            <body data-theme={"dark"} class={"flex flex-col-reverse md:flex-col h-full font-exo"}>
+            <body data-theme={"dark"} class={"flex flex-col-reverse md:flex-col fixed inset-0"}>
                 <RouterOutlet />
                 <ServiceWorkerRegister />
             </body>

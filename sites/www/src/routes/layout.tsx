@@ -26,15 +26,17 @@ export default component$(() => {
                 <NavigationMenu activeLabel={menu.at(0)?.label ?? "Updates"}>
                     {menu.map((item) => (
                         <NavigationLink
-                            label={item.label}
-                            href={item.href}
                             isActive={url.href.match(item.activePattern) !== null}
                             key={item.label.toLowerCase()}
+                            label={item.label}
+                            href={item.href}
                         />
                     ))}
                 </NavigationMenu>
             </SiteHeader>
-            <div class={"w-full h-full  overflow-y-scroll relative z-0"}>
+            <div
+                id={"content-container"}
+                class={"w-full h-full overflow-y-scroll scroll-pt-8 scroll-smooth relative z-0"}>
                 <section
                     class={
                         "w-full max-w-screen-lg h-full mx-auto flex-grow grid grid-cols-12 auto-rows-max gap-3"

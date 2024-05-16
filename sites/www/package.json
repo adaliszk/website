@@ -7,11 +7,13 @@
     "license": "BSD 2-Clause",
     "type": "module",
     "scripts": {
-        "build": "turbo build-deps && qwik build --verbose",
+        "build": "turbo build-deps && qwik build",
         "build.server": "vite build -c vite.ssg.config.ts",
-        "build.client": "vite build",
+        "build.client": "vite build --debug",
         "preview": "static-server ./dist",
         "format": "biome format --write . && biome lint --apply-unsafe ./src",
+        "deploy.preview": "wrangler pages deploy",
+        "deploy.live": "wrangler pages publish",
         "lint": "biome lint ./src",
         "dev": "vite --mode ssr"
     },

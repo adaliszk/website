@@ -1,7 +1,7 @@
 import type { PropsOf } from "@builder.io/qwik";
 import { $, component$ } from "@builder.io/qwik";
 import { twMerge } from "tailwind-merge";
-import { useNavigationContext } from "./NavigationContext";
+import { useNavigationContext } from "./_NavigationContext";
 
 export type NavigationLinkProps = PropsOf<"a"> & {
     isActive?: boolean;
@@ -13,7 +13,7 @@ export const NavigationLink = component$<NavigationLinkProps>(
     ({ label, class: className, isActive, ...props }) => {
         const context = useNavigationContext();
         const mainStyle = twMerge(
-            "relative z-30 py-2 px-4 font-oswald font-normal uppercase tracking-wide select-none",
+            "relative z-30 py-2 px-4 font-exo font-normal uppercase tracking-wide select-none",
             (isActive ?? false) && "active underline underline-offset-2",
         );
         return (

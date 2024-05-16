@@ -14,6 +14,7 @@ import Root from "./root.jsx";
 
 import "@adaliszk/std/prelude";
 
+// noinspection JSUnusedGlobalSymbols
 export default function (opts: RenderOptions) {
     return render(document, <Root />, opts);
 }

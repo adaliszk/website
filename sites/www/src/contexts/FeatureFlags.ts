@@ -6,6 +6,7 @@ export const FeatureFlagContext = createContextId<typeof FeatureFlags>(
 );
 
 export type FeatureFlagType = typeof FeatureFlags;
+export type PageFlagType = typeof FeatureFlags.pages;
 
 export function useFeatureFlagContextProvider() {
     return useContextProvider(FeatureFlagContext, FeatureFlags);
